@@ -17,6 +17,12 @@ is_dir() {
     [ -d "$path" ]
 }
 
+# zinit
+if ! is_dir ~/.zinit; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+fi
+
+
 # checking brew path to see bin file exists or not
 if [ ! -f /usr/local/bin/brew ]; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
