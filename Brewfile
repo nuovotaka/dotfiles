@@ -9,6 +9,7 @@ brew "gnupg"
 brew "mas"
 brew "sqlite"
 brew "starship"
+brew "stow"
 brew "tree"
 brew "zsh"
 

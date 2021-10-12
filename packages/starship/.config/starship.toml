@@ -1,0 +1,14 @@
+format="""
+$all$directory
+$character
+"""
+
+[character]
+success_symbol = "🦄 "
+error_symbol = "❌ "
+
+[git_branch]
+symbol = "🌱 "
+
+[package]
+disabled = true
