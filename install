@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+# checking brew path to see bin file exists or not
+if [ ! -f /usr/local/bin/brew ]; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+fi
+
+CLONE_PATH=~ # <- change it
+if [ ! -d "$CLONE_PATH" ]; then
+    mkdir -p "$CLONE_PATH"
+fi
+
+# check whether dotfiles is already cloned or not
+if [ ! -d "$CLONE_PATH"/dotfiles ]; then
+    cd "$CLONE_PATH"
+    git clone <remote-repo-url> # <- change it
+fi
+
+step2
