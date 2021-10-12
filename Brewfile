@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+cask_args appdir: "/Applications"
 
 brew "asdf"
 brew "gawk"
@@ -19,6 +20,7 @@ cask "karabiner-elements", args: { appdir: "/Applications" }
 cask "tableplus"
 cask "vagrant"
 cask "virtualbox"
+cask "visual-studio-code"
 
 mas "1Keyboard", id: 766939888
 mas "Affinity Designer", id: 824171161
