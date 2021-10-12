@@ -45,8 +45,17 @@ if [ ! -d $HOME/.config ]; then
     mkdir $HOME/.config/
 fi
 
-stow -v -d "$CLONE_PATH"/dotfiles/packages -t $HOME zsh starship git asdf
+stow -v -d "$CLONE_PATH"/dotfiles/packages -t $HOME zsh starship git asdf editor
 
+# vim
+plug_path=~/.vim/bundle/Vundle.vim
+if ! is_dir "$plug_path"; then
+    log 'Setup Vundle vim'
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall +qall
+fi
+
+# git
 if ! is_file ~/.ssh/id_ed25519.pub; then
     log 'Setup gpg signing for git'
     ssh-keygen -t ed25519 -C "tkn.infomail@gmail.com"

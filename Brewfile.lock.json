@@ -5,10 +5,10 @@
         "revision": "3b280b116f481e3d596789b7ee93cb4cf5ad23b4"
       },
       "homebrew/cask": {
-        "revision": "719b68ede31be6e23d23e05b392b5f77201a9d7f"
+        "revision": "59f9b78e5480fabea4d4c954e3dfdec37a066acd"
       },
       "homebrew/core": {
-        "revision": "c8e53b2860073c1a9a1cfd24acb2af8f8ae6b0de"
+        "revision": "fecc4fe80ee06b63a4f0091a4d4516677618b441"
       }
     },
     "brew": {
@@ -357,13 +357,19 @@
       "alfred": {
         "version": "4.5.1,1256",
         "options": {
-          "full_name": "alfred"
+          "full_name": "alfred",
+          "args": {
+            "appdir": "/Applications"
+          }
         }
       },
       "docker": {
         "version": "4.1.0,69386",
         "options": {
-          "full_name": "docker"
+          "full_name": "docker",
+          "args": {
+            "appdir": "/Applications"
+          }
         }
       },
       "karabiner-elements": {
@@ -378,19 +384,28 @@
       "tableplus": {
         "version": "4.2.0,388",
         "options": {
-          "full_name": "tableplus"
+          "full_name": "tableplus",
+          "args": {
+            "appdir": "/Applications"
+          }
         }
       },
       "vagrant": {
         "version": "2.2.18",
         "options": {
-          "full_name": "vagrant"
+          "full_name": "vagrant",
+          "args": {
+            "appdir": "/Applications"
+          }
         }
       },
       "virtualbox": {
         "version": "6.1.26,145957",
         "options": {
-          "full_name": "virtualbox"
+          "full_name": "virtualbox",
+          "args": {
+            "appdir": "/Applications"
+          }
         }
       }
     },
@@ -582,7 +597,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.2.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "c8e53b2860073c1a9a1cfd24acb2af8f8ae6b0de",
+        "Homebrew/homebrew-core": "fecc4fe80ee06b63a4f0091a4d4516677618b441",
         "CLT": "",
         "Xcode": "13.0",
         "macOS": "11.6"
