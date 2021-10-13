@@ -1,3 +1,13 @@
+# dotfiles
+
+MacOS only
+
+## Tools
+
+- GNU stow
+- Homebrew bundle
+- VSCode Setting Sync
+
 # Installation
 
 Run install
