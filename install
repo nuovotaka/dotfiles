@@ -17,6 +17,9 @@ for i in "$@"; do
         -u=*|--unlink=*)
             unlink_packages="${i#*=}"
             shift ;;
+        -ua|--unlink-all)
+            unlink_packages="$(ls $STOW_PACKAGES_PATH)"
+            shift ;;
         *) ;;
     esac
 done
@@ -38,7 +41,9 @@ is_dir() {
 
 if [ -n "$unlink_packages" ]; then
     log 'Unlinking dotfiles...'
-    stow -vD -d "$STOW_PACKAGES_PATH" -t ~ "$unlink_packages"
+    for unlink_pack in $unlink_packages; do
+        stow -vD -d "$STOW_PACKAGES_PATH" -t ~ "$unlink_pack"
+    done
     exit
 fi
 

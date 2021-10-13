@@ -5,10 +5,10 @@
         "revision": "3b280b116f481e3d596789b7ee93cb4cf5ad23b4"
       },
       "homebrew/cask": {
-        "revision": "022f81f42189773b144cb5a7e758ab50841e1650"
+        "revision": "46c301fd3e3c1d756df00b930781f2fc455f9592"
       },
       "homebrew/core": {
-        "revision": "4a432de117b5a86546fbfec6b555fa4e271d8e28"
+        "revision": "f9f0144d52b17846a7411dd10dddaccf9bf95354"
       }
     },
     "brew": {
@@ -472,7 +472,7 @@
       },
       "Fotor Photo Editor": {
         "id": "503039729",
-        "version": "4.1.3"
+        "version": "4.1.4"
       },
       "iBooks Author": {
         "id": "490152466",
@@ -597,7 +597,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.2.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "4a432de117b5a86546fbfec6b555fa4e271d8e28",
+        "Homebrew/homebrew-core": "f9f0144d52b17846a7411dd10dddaccf9bf95354",
         "CLT": "",
         "Xcode": "13.0",
         "macOS": "11.6"
