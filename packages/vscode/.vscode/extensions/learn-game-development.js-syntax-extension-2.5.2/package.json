@@ -1,0 +1,159 @@
+{
+	"name": "js-syntax-extension",
+	"displayName": "JavaScript to Typescript Converter & Syntax Highlighter",
+	"publisher": "learn-game-development",
+	"icon": "LGDLogo.png",
+	"scripts": {
+		"test": "jest --config ./tests/jest.config.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Andrew199617/js-syntax-extension"
+	},
+	"description": "Extra Syntax highlighting for JS/React/Next.js files. Compile/Convert JS files to TS files. Generate Typings for JavaScript project in seconds. Support React + Next.js.",
+	"version": "2.5.2",
+	"engines": {
+		"node": "10.xx",
+		"vscode": "^1.1.0"
+	},
+	"keywords": [
+		"js-syntax",
+		".js",
+		"js",
+		"javascript",
+		"Learn Game Development",
+		"LGD",
+		"react",
+		"next",
+		"next.js",
+		"typescript",
+		"ts",
+		".ts",
+		"productivity"
+	],
+	"categories": [
+		"Programming Languages"
+	],
+	"activationEvents": [
+		"onLanguage:javascript",
+		"onCommand:lgd.generateTypings",
+		"onCommand:lgd.generateTypingsForAll"
+	],
+	"main": "./src/LGD",
+	"contributes": {
+		"commands": [
+			{
+				"command": "lgd.generateTypings",
+				"title": "Compile current js file to a ts file.",
+				"category": "LGD"
+			},
+			{
+				"command": "lgd.generateTypingsForAll",
+				"title": "Compile all js files in project to ts files.",
+				"category": "LGD"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "LGD JS Syntax configuration",
+			"properties": {
+				"lgd.options": {
+					"type": "object",
+					"description": "Configuration options for LGD JS Syntax extension.",
+					"properties": {
+						"autoComplete": {
+							"type": "object",
+							"description": "Configuration options for LGD JS Syntax extension.",
+							"properties": {
+								"enabled": {
+									"type": "boolean",
+									"description": "Should we provide snippets when the opportunity arises. Example: Documentation snippet shows with /**",
+									"default": true
+								}
+							}
+						},
+						"generateTypings": {
+							"type": "boolean",
+							"description": "Whether we should automatically compile js files into ts files when you save the document.",
+							"default": true
+						},
+						"generateTypingsOnChange": {
+							"type": "boolean",
+							"description": "Whether we should automatically compile js files into ts files when you change the document.",
+							"default": true
+						},
+						"maintainHierarchy": {
+							"type": "boolean",
+							"description": "When compiling the js file should we keep the directory structure.",
+							"default": true
+						},
+						"createDebugLog": {
+							"type": "boolean",
+							"description": "Whether we should create a log file to help debug errors and anomalies happening with this plugin. Log file is located in typings folder.",
+							"default": true
+						},
+						"extractPropsAndState": {
+							"type": "boolean",
+							"description": "Whether we should create interfaces for State and Props.",
+							"default": true
+						}
+					}
+				}
+			}
+		},
+		"grammars": [
+			{
+				"scopeName": "source.lgd.js",
+				"injectTo": [
+					"source.js"
+				],
+				"path": "./syntaxes/javascript.tmLanguage.json"
+			},
+			{
+				"scopeName": "source.comment.line.injection.js",
+				"injectTo": [
+					"source.js"
+				],
+				"path": "./syntaxes/comment.tmLanguage.json"
+			},
+			{
+				"scopeName": "source.objectliteral.injection",
+				"injectTo": [
+					"source.js"
+				],
+				"path": "./syntaxes/objectliteral.tmLanguage.json"
+			},
+			{
+				"scopeName": "source.variable.injection",
+				"injectTo": [
+					"source.js"
+				],
+				"path": "./syntaxes/variabledefinition.tmLanguage.json"
+			},
+			{
+				"scopeName": "source.function.call.injection",
+				"injectTo": [
+					"source.js"
+				],
+				"path": "./syntaxes/functioncall.tmLanguage.json"
+			}
+		]
+	},
+	"dependencies": {
+		"@learngamedevelopment/oloo": "^2.1.0",
+		"@types/vscode": "^1.44.0"
+	},
+	"devDependencies": {
+		"@types/jest": "^26.0.4",
+		"babel-eslint": "^10.0.3",
+		"eslint": "^6.2.2",
+		"jest": "^25.2.2",
+		"vscode": "^1.1.0"
+	},
+	"__metadata": {
+		"id": "3783cd6d-3dbd-4ea6-a2c8-97e1e1fd0043",
+		"publisherId": "1f098d17-8e40-45ab-9743-1ada2acb04b4",
+		"publisherDisplayName": "Learn Game Development",
+		"installedTimestamp": 1631753342602
+	}
+}

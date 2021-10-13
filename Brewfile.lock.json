@@ -5,10 +5,10 @@
         "revision": "3b280b116f481e3d596789b7ee93cb4cf5ad23b4"
       },
       "homebrew/cask": {
-        "revision": "59f9b78e5480fabea4d4c954e3dfdec37a066acd"
+        "revision": "2b9784b20b0a5027bdb1ac374abe132db8cf11bc"
       },
       "homebrew/core": {
-        "revision": "fecc4fe80ee06b63a4f0091a4d4516677618b441"
+        "revision": "8d926c9cf462dbd2ff1886dbbd418c55609a8e66"
       }
     },
     "brew": {
@@ -364,7 +364,7 @@
         }
       },
       "docker": {
-        "version": "4.1.0,69386",
+        "version": "4.1.1,69879",
         "options": {
           "full_name": "docker",
           "args": {
@@ -597,7 +597,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.2.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "fecc4fe80ee06b63a4f0091a4d4516677618b441",
+        "Homebrew/homebrew-core": "8d926c9cf462dbd2ff1886dbbd418c55609a8e66",
         "CLT": "",
         "Xcode": "13.0",
         "macOS": "11.6"

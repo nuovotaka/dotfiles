@@ -2,6 +2,25 @@
 
 set -e
 
+STOW_PACKAGES_PATH="$HOME"/dotfiles/packages
+
+unlink_packages=
+verbose=
+for i in "$@"; do
+    case "$i" in
+       -s|--skip-apps)
+            skip_apps=1
+            shift ;;
+        -v|--verbose)
+            verbose=1
+            shift ;;
+        -u=*|--unlink=*)
+            unlink_packages="${i#*=}"
+            shift ;;
+        *) ;;
+    esac
+done
+
 log() {
     message=$1
     echo 📌 "$message"
@@ -16,6 +35,12 @@ is_dir() {
     path="$1"
     [ -d "$path" ]
 }
+
+if [ -n "$unlink_packages" ]; then
+    log 'Unlinking dotfiles...'
+    stow -vD -d "$STOW_PACKAGES_PATH" -t ~ "$unlink_packages"
+    exit
+fi
 
 # zinit
 if ! is_dir ~/.zinit; then
@@ -45,7 +70,7 @@ if [ ! -d $HOME/.config ]; then
     mkdir $HOME/.config/
 fi
 
-stow -v -d "$CLONE_PATH"/dotfiles/packages -t $HOME zsh starship git asdf editor
+stow -v -d "$STOW_PACKAGES_PATH" -t $HOME $(ls $STOW_PACKAGES_PATH)
 
 # vim
 plug_path=~/.vim/bundle/Vundle.vim
