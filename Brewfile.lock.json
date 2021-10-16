@@ -5,10 +5,13 @@
         "revision": "3b280b116f481e3d596789b7ee93cb4cf5ad23b4"
       },
       "homebrew/cask": {
-        "revision": "e9b90b0d8b6b1375106235385b454ea182d9f03b"
+        "revision": "8aa6bfea5c6da88a2abdac72d6c9ae2ea6d59d1a"
       },
       "homebrew/core": {
-        "revision": "523b4cbefb3b051246c9e22d42da1e5f65c0fdb5"
+        "revision": "14ecee5490d11ee42b98a9d4d0bf2fd023ff9564"
+      },
+      "homebrew/cask-fonts": {
+        "revision": "ecb015278651638cf40c369d98418441b5ff9fe6"
       }
     },
     "brew": {
@@ -357,19 +360,19 @@
       "alfred": {
         "version": "4.6,1266",
         "options": {
-          "full_name": "alfred",
           "args": {
             "appdir": "/Applications"
-          }
+          },
+          "full_name": "alfred"
         }
       },
       "docker": {
         "version": "4.1.1,69879",
         "options": {
-          "full_name": "docker",
           "args": {
             "appdir": "/Applications"
-          }
+          },
+          "full_name": "docker"
         }
       },
       "karabiner-elements": {
@@ -384,46 +387,52 @@
       "tableplus": {
         "version": "4.5.0,396",
         "options": {
-          "full_name": "tableplus",
           "args": {
             "appdir": "/Applications"
-          }
+          },
+          "full_name": "tableplus"
         }
       },
       "vagrant": {
         "version": "2.2.18",
         "options": {
-          "full_name": "vagrant",
           "args": {
             "appdir": "/Applications"
-          }
+          },
+          "full_name": "vagrant"
         }
       },
       "virtualbox": {
         "version": "6.1.26,145957",
         "options": {
-          "full_name": "virtualbox",
           "args": {
             "appdir": "/Applications"
-          }
+          },
+          "full_name": "virtualbox"
         }
       },
       "visual-studio-code": {
         "version": "1.61.1",
         "options": {
-          "full_name": "visual-studio-code",
           "args": {
             "appdir": "/Applications"
-          }
+          },
+          "full_name": "visual-studio-code"
         }
       },
       "appcleaner": {
         "version": "3.6.0,4070",
         "options": {
-          "full_name": "appcleaner",
           "args": {
             "appdir": "/Applications"
-          }
+          },
+          "full_name": "appcleaner"
+        }
+      },
+      "font-code-new-roman-nerd-font": {
+        "version": "2.1.0",
+        "options": {
+          "full_name": "font-code-new-roman-nerd-font"
         }
       }
     },
@@ -607,7 +616,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.2.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "523b4cbefb3b051246c9e22d42da1e5f65c0fdb5",
+        "Homebrew/homebrew-core": "14ecee5490d11ee42b98a9d4d0bf2fd023ff9564",
         "CLT": "12.5.1.0.1.1623191612",
         "Xcode": "13.0",
         "macOS": "11.6"
