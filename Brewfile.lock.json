@@ -5,10 +5,10 @@
         "revision": "3b280b116f481e3d596789b7ee93cb4cf5ad23b4"
       },
       "homebrew/cask": {
-        "revision": "37ebca368b4e886a5bbabeb8e64da073379f3dc4"
+        "revision": "e9b90b0d8b6b1375106235385b454ea182d9f03b"
       },
       "homebrew/core": {
-        "revision": "f362df2a135a076bbf21d352a62a866f8c48a079"
+        "revision": "523b4cbefb3b051246c9e22d42da1e5f65c0fdb5"
       }
     },
     "brew": {
@@ -355,7 +355,7 @@
     },
     "cask": {
       "alfred": {
-        "version": "4.5.1,1256",
+        "version": "4.6,1266",
         "options": {
           "full_name": "alfred",
           "args": {
@@ -382,7 +382,7 @@
         }
       },
       "tableplus": {
-        "version": "4.2.0,388",
+        "version": "4.5.0,396",
         "options": {
           "full_name": "tableplus",
           "args": {
@@ -409,9 +409,18 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.61.0",
+        "version": "1.61.1",
         "options": {
           "full_name": "visual-studio-code",
+          "args": {
+            "appdir": "/Applications"
+          }
+        }
+      },
+      "appcleaner": {
+        "version": "3.6.0,4070",
+        "options": {
+          "full_name": "appcleaner",
           "args": {
             "appdir": "/Applications"
           }
@@ -481,7 +490,7 @@
       },
       "Fotor Photo Editor": {
         "id": "503039729",
-        "version": "4.1.4"
+        "version": "4.1.5"
       },
       "iBooks Author": {
         "id": "490152466",
@@ -494,10 +503,6 @@
       "iMovie": {
         "id": "408981434",
         "version": "10.2.5"
-      },
-      "InstaFeed": {
-        "id": "610883404",
-        "version": "2.0.1"
       },
       "iText Express": {
         "id": "416550249",
@@ -583,10 +588,6 @@
         "id": "1482454543",
         "version": "8.82"
       },
-      "Xcode": {
-        "id": "497799835",
-        "version": "13.0"
-      },
       "XnSketch": {
         "id": "567379804",
         "version": "1.20"
@@ -606,8 +607,8 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.2.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "f362df2a135a076bbf21d352a62a866f8c48a079",
-        "CLT": "",
+        "Homebrew/homebrew-core": "523b4cbefb3b051246c9e22d42da1e5f65c0fdb5",
+        "CLT": "12.5.1.0.1.1623191612",
         "Xcode": "13.0",
         "macOS": "11.6"
       }

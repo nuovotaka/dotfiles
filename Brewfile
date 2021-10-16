@@ -12,8 +12,8 @@ brew "sqlite"
 brew "starship"
 brew "stow"
 brew "tree"
-brew "zsh"
 
+cask "appcleaner"
 cask "alfred"
 cask "docker"
 cask "karabiner-elements", args: { appdir: "/Applications" }
@@ -41,7 +41,6 @@ mas "Fotor Photo Editor", id: 503039729
 mas "iBooks Author", id: 490152466
 mas "iMage Tools", id: 493949693
 mas "iMovie", id: 408981434
-mas "InstaFeed", id: 610883404
 mas "iText Express", id: 416550249
 mas "JPEGmini Lite", id: 525742250
 mas "Keynote", id: 409183694
@@ -63,7 +62,6 @@ mas "StuffIt Expander", id: 405580712
 mas "The Unarchiver", id: 425424353
 mas "ToyViewer", id: 414298354
 mas "Twitter", id: 1482454543
-mas "Xcode", id: 497799835
 mas "XnSketch", id: 567379804
 mas "フリーフォント（商用オープンタイプフォント550種", id: 647697434
 mas "宛名職人V24M", id: 1225545286
