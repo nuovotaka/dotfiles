@@ -1,7 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
-cask_args appdir: "/Applications"
 
 brew "asdf"
 brew "gawk"
@@ -13,14 +13,15 @@ brew "starship"
 brew "stow"
 brew "tree"
 
-cask "appcleaner"
-cask "alfred"
-cask "docker"
+cask "alfred", args: { appdir: "/Applications" }
+cask "appcleaner", args: { appdir: "/Applications" }
+cask "docker", args: { appdir: "/Applications" }
+cask "font-code-new-roman-nerd-font"
 cask "karabiner-elements", args: { appdir: "/Applications" }
-cask "tableplus"
-cask "vagrant"
-cask "virtualbox"
-cask "visual-studio-code"
+cask "tableplus", args: { appdir: "/Applications" }
+cask "vagrant", args: { appdir: "/Applications" }
+cask "virtualbox", args: { appdir: "/Applications" }
+cask "visual-studio-code", args: { appdir: "/Applications" }
 
 mas "1Keyboard", id: 766939888
 mas "Affinity Designer", id: 824171161
