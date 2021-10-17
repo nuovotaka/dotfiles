@@ -8,6 +8,9 @@ osascript -e 'tell application "System Preferences" to quit'
 
 # ファイアーウォール入
 sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
+# トラックパッド
+# タップでクリック
+defaults write -g com.apple.mouse.tapBehavior -int 1
 
 # Terminal profileの変更
 TERM_PROFILE='MyTerminal';
