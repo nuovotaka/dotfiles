@@ -10,7 +10,7 @@ osascript -e 'tell application "System Preferences" to quit'
 sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 # トラックパッド
 # タップでクリック
-defaults write -g com.apple.mouse.tapBehavior -int 1
+# defaults write -g com.apple.mouse.tapBehavior -int 1
 
 # Dockの設定
 defaults write com.apple.dock tilesize -int 20
@@ -29,3 +29,4 @@ if [ "${CURRENT_PROFILE}" != "${TERM_PROFILE}" ]; then
     defaults write com.apple.Terminal "Default Window Settings" -string "$TERM_PROFILE"
     defaults write com.apple.Terminal "Startup Window Settings" -string "$TERM_PROFILE"
 fi
+defaults import com.apple.Terminal "$HOME/Library/Preferences/com.apple.Terminal.plist"
