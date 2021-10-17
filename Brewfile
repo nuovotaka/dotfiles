@@ -15,6 +15,7 @@ brew "tree"
 
 cask "alfred", args: { appdir: "/Applications" }
 cask "appcleaner", args: { appdir: "/Applications" }
+cask "atom", args: { appdir: "/Applications" }
 cask "docker", args: { appdir: "/Applications" }
 cask "font-code-new-roman-nerd-font"
 cask "karabiner-elements", args: { appdir: "/Applications" }
