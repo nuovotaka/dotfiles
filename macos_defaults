@@ -10,7 +10,7 @@ osascript -e 'tell application "System Preferences" to quit'
 sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 # トラックパッド
 # タップでクリック
-# defaults write -g com.apple.mouse.tapBehavior -int 1
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
 # Dockの設定
 defaults write com.apple.dock tilesize -int 20
