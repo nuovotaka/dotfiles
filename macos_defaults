@@ -29,4 +29,3 @@ if [ "${CURRENT_PROFILE}" != "${TERM_PROFILE}" ]; then
     defaults write com.apple.Terminal "Default Window Settings" -string "$TERM_PROFILE"
     defaults write com.apple.Terminal "Startup Window Settings" -string "$TERM_PROFILE"
 fi
-defaults import com.apple.Terminal "$HOME/Library/Preferences/com.apple.Terminal.plist"
