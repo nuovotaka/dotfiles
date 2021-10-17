@@ -12,6 +12,11 @@ sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 # タップでクリック
 defaults write -g com.apple.mouse.tapBehavior -int 1
 
+# Dockの設定
+defaults write com.apple.dock tilesize -int 20
+defaults write com.apple.dock orientation -string "left"
+defaults write com.apple.dock show-recents -bool false
+
 # Terminal profileの変更
 TERM_PROFILE='MyTerminal';
 TERM_PATH='./dotfiles';
