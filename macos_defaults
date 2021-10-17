@@ -11,11 +11,16 @@ sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 # トラックパッド
 # タップでクリック
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults -currentHost write -g com.apple.mouse.tapBehavior -bool true
+
+killall SystemUIServer
 
 # Dockの設定
 defaults write com.apple.dock tilesize -int 20
 defaults write com.apple.dock orientation -string "left"
 defaults write com.apple.dock show-recents -bool false
+
+killall Dock
 
 # Terminal profileの変更
 TERM_PROFILE='MyTerminal';
@@ -29,3 +34,5 @@ if [ "${CURRENT_PROFILE}" != "${TERM_PROFILE}" ]; then
     defaults write com.apple.Terminal "Default Window Settings" -string "$TERM_PROFILE"
     defaults write com.apple.Terminal "Startup Window Settings" -string "$TERM_PROFILE"
 fi
+
+sudo reboot
