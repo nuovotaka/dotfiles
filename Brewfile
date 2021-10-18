@@ -20,8 +20,6 @@ cask "docker", args: { appdir: "/Applications" }
 cask "font-code-new-roman-nerd-font"
 cask "karabiner-elements", args: { appdir: "/Applications" }
 cask "tableplus", args: { appdir: "/Applications" }
-cask "vagrant", args: { appdir: "/Applications" }
-cask "virtualbox", args: { appdir: "/Applications" }
 cask "visual-studio-code", args: { appdir: "/Applications" }
 
 mas "1Keyboard", id: 766939888
