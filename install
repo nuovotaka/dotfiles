@@ -39,6 +39,12 @@ is_dir() {
     [ -d "$path" ]
 }
 
+# check Intel Mac
+if [ ! "$(uname -m)" == "x86_64" ]; then
+    log "Not Intel Mac"
+    exit
+fi
+
 if [ -n "$unlink_packages" ]; then
     log 'Unlinking dotfiles...'
     for unlink_pack in $unlink_packages; do

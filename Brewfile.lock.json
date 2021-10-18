@@ -5,13 +5,13 @@
         "revision": "3b280b116f481e3d596789b7ee93cb4cf5ad23b4"
       },
       "homebrew/cask": {
-        "revision": "b7951ec2c2f5ceb217a5e469ddef2efdb23ad6d8"
+        "revision": "9b71ce2807982a14a23eecb78a85a436bec9a8cd"
       },
       "homebrew/core": {
-        "revision": "0132f3f7f21d438beeb3abd8aa1f27e16df276c7"
+        "revision": "b8f3840957d316ccd7231a36012801782ed4db81"
       },
       "homebrew/cask-fonts": {
-        "revision": "ecb015278651638cf40c369d98418441b5ff9fe6"
+        "revision": "97257325dea0e2aada100b805d61569b8554de32"
       }
     },
     "brew": {
@@ -434,6 +434,15 @@
         "options": {
           "full_name": "font-code-new-roman-nerd-font"
         }
+      },
+      "atom": {
+        "version": "1.58.0",
+        "options": {
+          "args": {
+            "appdir": "/Applications"
+          },
+          "full_name": "atom"
+        }
       }
     },
     "mas": {
@@ -616,8 +625,8 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.2.16",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "0132f3f7f21d438beeb3abd8aa1f27e16df276c7",
-        "CLT": "12.5.1.0.1.1623191612",
+        "Homebrew/homebrew-core": "b8f3840957d316ccd7231a36012801782ed4db81",
+        "CLT": "13.0.0.0.1.1630607135",
         "Xcode": "13.0",
         "macOS": "11.6"
       }
