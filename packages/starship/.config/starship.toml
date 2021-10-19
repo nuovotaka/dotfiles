@@ -28,3 +28,12 @@ discharging_symbol = "😨 "
 #時間の表示をオンにして12時間表示に
 disabled = false
 use_12hr = true
+
+[custom.system_icons]
+description = "Show system icons"
+command     = '([ $(uname -s) == "Darwin" ] && [ $(uname -m) == "x86_64" ] && echo  64)'
+symbol      = "at"
+format      = "[$symbol]() [$output]($style) "
+style       = "bold"
+shell       = ["bash", "--noprofile", "--norc"]
+when        = "true"
