@@ -31,7 +31,7 @@ use_12hr = true
 
 [custom.system_icons]
 description = "Show system icons"
-command     = '([ $(uname -s) == "Darwin" ] && [ $(uname -m) == "x86_64" ] && echo   64)'
+command     = '([ $(uname -s) = "Darwin" ] && [ $(uname -m) = "x86_64" ] && echo   64)'
 symbol      = "at"
 format      = "[$symbol]() [$output]($style) "
 style       = "bold"
