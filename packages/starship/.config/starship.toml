@@ -35,5 +35,5 @@ command     = '([ $(uname -s) = "Darwin" ] && [ $(uname -m) = "x86_64" ] && echo
 symbol      = "at"
 format      = "[$symbol]() [$output]($style) "
 style       = "bold"
-shell       = ["bash", "--noprofile", "--norc"]
+shell       = ["sh", "--noprofile", "--norc"]
 when        = "true"
