@@ -5,13 +5,13 @@
         "revision": "3b280b116f481e3d596789b7ee93cb4cf5ad23b4"
       },
       "homebrew/cask": {
-        "revision": "d2381545613ac5d6b678fb3348d0f6e7913866f4"
+        "revision": "46c6bd4abdd87c9a6ee4540fa5920209c7b240d0"
       },
       "homebrew/core": {
-        "revision": "dc3719801c5a72e6ca9953e078b57e1f1c526f98"
+        "revision": "8a1d5a3435c77bd08fddf6e7f8b6625ecc2171d2"
       },
       "homebrew/cask-fonts": {
-        "revision": "a6130b8a7893db0c2756f06f5d5535558d8b0d31"
+        "revision": "abdf6dfd572e591108ceb6ea6710d6ec46d6fc29"
       }
     },
     "brew": {
@@ -412,7 +412,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.61.1",
+        "version": "1.61.2",
         "options": {
           "args": {
             "appdir": "/Applications"
@@ -520,7 +520,7 @@
       },
       "iMovie": {
         "id": "408981434",
-        "version": "10.2.5"
+        "version": "10.3"
       },
       "iText Express": {
         "id": "416550249",
@@ -604,7 +604,7 @@
       },
       "Twitter": {
         "id": "1482454543",
-        "version": "8.82"
+        "version": "8.83.1"
       },
       "XnSketch": {
         "id": "567379804",
@@ -623,9 +623,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.2.16",
+        "HOMEBREW_VERSION": "3.2.17",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "dc3719801c5a72e6ca9953e078b57e1f1c526f98",
+        "Homebrew/homebrew-core": "8a1d5a3435c77bd08fddf6e7f8b6625ecc2171d2",
         "CLT": "13.0.0.0.1.1630607135",
         "Xcode": "13.0",
         "macOS": "11.6"

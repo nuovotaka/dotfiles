@@ -40,7 +40,7 @@ is_dir() {
 }
 
 # check Intel Mac
-if [ ! "$(uname)" == "Darwin" -a "$(uname -m)" == "x86_64" ]; then
+if [ ! "$(uname)" = "Darwin" -a "$(uname -m)" = "x86_64" ]; then
     log "Not Intel Mac"
     exit
 fi
