@@ -19,6 +19,7 @@ killall SystemUIServer
 defaults write com.apple.dock tilesize -int 20
 defaults write com.apple.dock orientation -string "left"
 defaults write com.apple.dock show-recents -bool false
+defaults write com.apple.dock launchanim -bool false
 
 killall Dock
 
