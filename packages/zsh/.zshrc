@@ -39,3 +39,4 @@ alias brew='PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/L
 . /usr/local/opt/asdf/libexec/asdf.sh
 
 eval "$(starship init zsh)"
+export PATH="/usr/local/opt/tcl-tk/bin:$PATH"

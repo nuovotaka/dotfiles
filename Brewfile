@@ -11,6 +11,7 @@ brew "mas"
 brew "sqlite"
 brew "starship"
 brew "stow"
+brew "tcl-tk"
 brew "tree"
 
 cask "alfred", args: { appdir: "/Applications" }
