@@ -14,6 +14,7 @@ brew "stow"
 brew "tcl-tk"
 brew "tree"
 
+cask "alacritty", args: { appdir: "/Applications" }
 cask "alfred", args: { appdir: "/Applications" }
 cask "appcleaner", args: { appdir: "/Applications" }
 cask "atom", args: { appdir: "/Applications" }
