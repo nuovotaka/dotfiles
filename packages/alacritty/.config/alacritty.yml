@@ -3,7 +3,10 @@ live_config_reload: true
 background_opacity: 0.85
 
 window:
-  decorations: none
+  dimensions:
+    columns: 100
+    lines: 45
+  decorations: full
   dynamic_padding: true
   padding:
     x: 2
