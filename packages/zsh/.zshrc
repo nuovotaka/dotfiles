@@ -31,7 +31,11 @@ zinit light zdharma/fast-syntax-highlighting
 
 
 # Customize to your needs...
-
+if [[ $(command -v exa) ]]; then
+    alias e='exa --icons'
+    alias ea='exa -aal --header --git --icons'
+    alias eta='exa -T -a -I "node_modules|.git|.cache" --color=always --icons | less -r'
+fi
 export LANG=ja_JP.UTF-8
 
 alias brew='PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/opt/m4/bin:/usr/local/opt/ncurses/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/openssl@1.1/bin brew' 
