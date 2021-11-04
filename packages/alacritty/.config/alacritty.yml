@@ -6,6 +6,9 @@ window:
   dimensions:
     columns: 100
     lines: 45
+  position:
+    x: 1370
+    y: 400
   decorations: full
   dynamic_padding: true
   padding:
