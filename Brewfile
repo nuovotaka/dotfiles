@@ -4,15 +4,18 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 
 brew "asdf"
+brew "exa"
 brew "gawk"
 brew "git"
 brew "gnupg"
 brew "mas"
 brew "sqlite"
+brew "xz"
 brew "starship"
 brew "stow"
 brew "tcl-tk"
 brew "tree"
+brew "zsh"
 
 cask "alacritty", args: { appdir: "/Applications" }
 cask "alfred", args: { appdir: "/Applications" }
@@ -21,6 +24,7 @@ cask "atom", args: { appdir: "/Applications" }
 cask "docker", args: { appdir: "/Applications" }
 cask "font-code-new-roman-nerd-font"
 cask "karabiner-elements", args: { appdir: "/Applications" }
+cask "silicon-info", args: { appdir: "/Applications" }
 cask "tableplus", args: { appdir: "/Applications" }
 cask "visual-studio-code", args: { appdir: "/Applications" }
 
