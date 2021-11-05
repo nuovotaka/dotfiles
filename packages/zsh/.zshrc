@@ -32,9 +32,9 @@ zinit light zdharma/fast-syntax-highlighting
 
 # Customize to your needs...
 if [[ $(command -v exa) ]]; then
-    alias e='exa --icons'
+    alias ee='exa --icons'
     alias ea='exa -aal --header --git --icons'
-    alias eta='exa -T -a -I "node_modules|.git|.cache" --color=always --icons | less -r'
+    alias eta='exa -T -L 3 -a -I "node_modules|.git|.cache" --color=always --icons | less -r'
 fi
 export LANG=ja_JP.UTF-8
 
