@@ -39,14 +39,6 @@ is_dir() {
     [ -d "$path" ]
 }
 
-# check Intel Mac
-if [ ! "$(uname)" = "Darwin" -a "$(uname -m)" = "x86_64" ]; then
-    log "Not Intel Mac"
-    exit
-fi
-
-log "intel mac"
-
 
 if [ -n "$unlink_packages" ]; then
     log 'Unlinking dotfiles...'
@@ -54,6 +46,35 @@ if [ -n "$unlink_packages" ]; then
         stow -vD -d "$STOW_PACKAGES_PATH" -t ~ "$unlink_pack"
     done
     exit
+fi
+
+# check Mac
+if [ "$(uname)" = "Darwin" ]; then
+    if [ "$(uname -m)" = "x86_64" ]; then
+        log "Intel mac"
+    elif [ "$(uname -m)" = "arm64" ]; then
+        log "arm64"
+    fi
+fi
+
+arch_name="$(uname -m)"
+
+if [ "${arch_name}" = "x86_64" ]; then
+    if ! is_file /usr/local/bin/brew; then
+        log 'Setup Homebrew'
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    fi
+elif [ "${arch_name}" = "arm64" ]; then
+    if ! is_file /opt/homebrew/bin/brew; then
+        log 'Setup Homebrew'
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+
+        log 'Install Rosetta 2'
+        sudo softwareupdate --install-rosetta
+        log 'Set Homebrew PATH'
+        exit
+    fi
 fi
 
 # zinit
