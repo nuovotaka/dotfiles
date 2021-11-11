@@ -73,8 +73,6 @@ elif [ "${arch_name}" = "arm64" ]; then
 
         log 'Install Rosetta 2'
         sudo softwareupdate --install-rosetta
-        log 'Set Homebrew PATH'
-        exit
     fi
 fi
 
