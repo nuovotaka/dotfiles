@@ -1,6 +1,6 @@
 # dotfiles
 
-MacOS only(Intel Mac)
+MacOS only
 
 ## Tools
 
