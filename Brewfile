@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 
+brew "arp-scan"
 brew "asdf"
 brew "exa"
 brew "gawk"
@@ -11,9 +12,10 @@ brew "gnupg"
 brew "mas"
 brew "sqlite"
 brew "xz"
+brew "tcl-tk"
+brew "python-tk@3.9"
 brew "starship"
 brew "stow"
-brew "tcl-tk"
 brew "tree"
 brew "zsh"
 
@@ -21,8 +23,11 @@ cask "alacritty", args: { appdir: "/Applications" }
 cask "alfred", args: { appdir: "/Applications" }
 cask "appcleaner", args: { appdir: "/Applications" }
 cask "atom", args: { appdir: "/Applications" }
+cask "brave-browser", args: { appdir: "/Applications" }
+cask "deepl", args: { appdir: "/Applications" }
 cask "docker", args: { appdir: "/Applications" }
 cask "font-code-new-roman-nerd-font"
+cask "insomnia", args: { appdir: "/Applications" }
 cask "karabiner-elements", args: { appdir: "/Applications" }
 cask "silicon-info", args: { appdir: "/Applications" }
 cask "tableplus", args: { appdir: "/Applications" }
