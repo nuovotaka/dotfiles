@@ -1,7 +1,7 @@
-nodejs 16.13.2
+nodejs 16.14.0
 ruby 3.1.0
 python 3.10.2
-hugo 0.92.2
+hugo 0.93.2
 yarn 1.22.15
 crystal 1.2.1
 rust 1.57.0
