@@ -25,6 +25,7 @@ cask "atom", args: { appdir: "/Applications" }
 cask "brave-browser", args: { appdir: "/Applications" }
 cask "deepl", args: { appdir: "/Applications" }
 cask "docker", args: { appdir: "/Applications" }
+cask "figma", args: { appdir: "/Applications" }
 cask "font-code-new-roman-nerd-font"
 cask "insomnia", args: { appdir: "/Applications" }
 cask "karabiner-elements", args: { appdir: "/Applications" }
