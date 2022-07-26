@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+cask_args appdir: "/Applications"
 
 brew "arp-scan"
 brew "asdf"
@@ -19,19 +20,19 @@ brew "stow"
 brew "tree"
 brew "zsh"
 
-cask "alacritty", args: { appdir: "/Applications" }
-cask "appcleaner", args: { appdir: "/Applications" }
-cask "atom", args: { appdir: "/Applications" }
-cask "brave-browser", args: { appdir: "/Applications" }
-cask "deepl", args: { appdir: "/Applications" }
-cask "docker", args: { appdir: "/Applications" }
-cask "figma", args: { appdir: "/Applications" }
+cask "alacritty"
+cask "appcleaner"
+cask "atom"
+cask "brave-browser"
+cask "deepl"
+cask "docker"
+cask "figma"
 cask "font-code-new-roman-nerd-font"
-cask "insomnia", args: { appdir: "/Applications" }
-cask "karabiner-elements", args: { appdir: "/Applications" }
-cask "raycast", args: { appdir: "/Applications" }
-cask "tableplus", args: { appdir: "/Applications" }
-cask "visual-studio-code", args: { appdir: "/Applications" }
+cask "insomnia"
+cask "karabiner-elements"
+cask "raycast"
+cask "tableplus"
+cask "visual-studio-code"
 
 mas "1Keyboard", id: 766939888
 mas "1Password for Safari", id: 1569813296
