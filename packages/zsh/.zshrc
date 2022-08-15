@@ -44,3 +44,5 @@ alias brew='PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/L
 
 eval "$(starship init zsh)"
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
