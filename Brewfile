@@ -31,6 +31,7 @@ cask "font-code-new-roman-nerd-font"
 cask "insomnia"
 cask "karabiner-elements"
 cask "raycast"
+cask "spotify"
 cask "tableplus"
 cask "visual-studio-code"
 
