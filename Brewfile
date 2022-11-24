@@ -22,7 +22,6 @@ brew "zsh"
 
 cask "alacritty"
 cask "appcleaner"
-cask "atom"
 cask "brave-browser"
 cask "deepl"
 cask "docker"
