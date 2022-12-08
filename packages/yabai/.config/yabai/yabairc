@@ -45,5 +45,6 @@ yabai -m rule --add app="^システム環境設定$"       manage=off
 yabai -m rule --add app="^カレンダー$"            manage=off
 yabai -m rule --add app="^Twitter$"             manage=off
 yabai -m rule --add app="^DeepL$"               manage=off
+yabai -m rule --add app="^1Password$"           manage=off
 
 echo "yabai configuration loaded..."
