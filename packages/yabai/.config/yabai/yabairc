@@ -6,6 +6,15 @@ yabai -m config window_placement             second_child
 yabai -m config layout                       bsp
 # yabai -m config bottom_padding               100
 
+# active window border settings
+yabai -m config \
+    window_border_width     4       \
+    window_border_radius    12      \
+    window_border_blur      off     \
+    window_border_hidpi     on      \
+    window_border           on      \
+    active_window_border_color  0xdd02fa82
+
 # set float layout for MBP display
 space_indices_on_mbp_display="$(
     yabai -m query --displays \
