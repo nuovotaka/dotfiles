@@ -39,12 +39,14 @@ yabai -m rule --add app="^Dictionary$"         manage=off
 yabai -m rule --add app="^Disk Utility$"       manage=off
 yabai -m rule --add app="^Postlab$"            manage=off
 yabai -m rule --add app="^Simulator$"          manage=off
-yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app="^Electron$"           manage=off
+yabai -m rule --add app="^System Preferences$"  manage=off
+yabai -m rule --add app="^Electron$"            manage=off
 yabai -m rule --add app="^システム環境設定$"       manage=off
 yabai -m rule --add app="^カレンダー$"            manage=off
-yabai -m rule --add app="^Twitter$"             manage=off
 yabai -m rule --add app="^DeepL$"               manage=off
+yabai -m rule --add app="^Twitter$"             manage=off
 yabai -m rule --add app="^1Password$"           manage=off
+yabai -m rule --add app="^GitHub Desktop$"      manage=off
+yabai -m rule --add app="^Dropbox$"             manage=off
 
 echo "yabai configuration loaded..."
