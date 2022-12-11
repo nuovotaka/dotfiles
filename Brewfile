@@ -37,6 +37,7 @@ cask "karabiner-elements"
 cask "obsidian"
 cask "spotify"
 cask "tableplus"
+cask "telegram"
 cask "visual-studio-code"
 
 mas "1Keyboard", id: 766939888
