@@ -78,7 +78,7 @@ fi
 
 # zinit
 if ! is_dir ~/.zinit; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 fi
 
 CLONE_PATH=$HOME # <- change it
