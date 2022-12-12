@@ -52,7 +52,6 @@ mas "com.adriangranados.wifiexplorerlite", id: 1408727408
 mas "Composure", id: 656377653
 mas "Cookbook Themes", id: 787647411
 mas "Craft", id: 1487937127
-mas "DesiGN for iBooks - Templates", id: 527161787
 mas "Disk Diag", id: 672206759
 mas "exifpurge", id: 784466108
 mas "feedly", id: 865500966
@@ -61,8 +60,6 @@ mas "iBooks Author", id: 490152466
 mas "iMage Tools", id: 493949693
 mas "iMovie", id: 408981434
 mas "iText Express", id: 416550249
-mas "JPEGmini Lite", id: 525742250
-mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "MARKETSPEED", id: 946680495
 mas "Memory Clean", id: 451444120
