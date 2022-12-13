@@ -74,6 +74,7 @@ mas "StuffIt Expander", id: 405580712
 mas "The Unarchiver", id: 425424353
 mas "ToyViewer", id: 414298354
 mas "Twitter", id: 1482454543
+mas "Xcode", id: 497799835
 mas "XnSketch", id: 567379804
 mas "フリーフォント（商用オープンタイプフォント550種", id: 647697434
 mas "宛名職人V24M", id: 1225545286
