@@ -50,20 +50,15 @@ mas "Color Picker", id: 641027709
 mas "ColorSnapper", id: 418176775
 mas "com.adriangranados.wifiexplorerlite", id: 1408727408
 mas "Composure", id: 656377653
-mas "Cookbook Themes", id: 787647411
 mas "Craft", id: 1487937127
-mas "Disk Diag", id: 672206759
 mas "exifpurge", id: 784466108
 mas "feedly", id: 865500966
 mas "Fotor Photo Editor", id: 503039729
-mas "iBooks Author", id: 490152466
 mas "iMage Tools", id: 493949693
 mas "iMovie", id: 408981434
-mas "iText Express", id: 416550249
 mas "LINE", id: 539883307
 mas "MARKETSPEED", id: 946680495
 mas "Memory Clean", id: 451444120
-mas "NetSpot", id: 514951692
 mas "NFT Creator", id: 1602374609
 mas "Numbers", id: 409203825
 mas "OneDrive", id: 823766827
@@ -75,12 +70,10 @@ mas "QaLL", id: 480452005
 mas "QREncoder", id: 452695239
 mas "Skala Preview", id: 498875079
 mas "Skitch", id: 425955336
-mas "Slack", id: 803453959
 mas "StuffIt Expander", id: 405580712
 mas "The Unarchiver", id: 425424353
 mas "ToyViewer", id: 414298354
 mas "Twitter", id: 1482454543
-mas "Xcode", id: 497799835
 mas "XnSketch", id: 567379804
 mas "フリーフォント（商用オープンタイプフォント550種", id: 647697434
 mas "宛名職人V24M", id: 1225545286
