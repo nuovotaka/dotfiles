@@ -76,15 +76,15 @@ elif [ "${arch_name}" = "arm64" ]; then
     fi
 fi
 
-# zinit
-if ! is_dir ~/.zinit; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
-fi
+# zi
+# if ! is_dir ~/.zi; then
+#     sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+# fi
 
 CLONE_PATH=$HOME # <- change it
-if [ ! -d "$CLONE_PATH" ]; then
-    mkdir -p "$CLONE_PATH"
-fi
+# if [ ! -d "$CLONE_PATH" ]; then
+#     mkdir -p "$CLONE_PATH"
+# fi
 
 # check whether dotfiles is already cloned or not
 if [ ! -d "$CLONE_PATH"/dotfiles ]; then
@@ -98,6 +98,7 @@ if [ ! -d $HOME/.config ]; then
     mkdir $HOME/.config/
 fi
 
+log 'Symlink by stow'
 stow -v -d "$STOW_PACKAGES_PATH" -t $HOME $(ls $STOW_PACKAGES_PATH)
 
 # vim
