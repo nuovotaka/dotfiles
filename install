@@ -108,8 +108,6 @@ if ! is_file "$plug_path"; then
     git clone --depth 1 https://github.com/wbthomason/packer.nvim \
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
-    npm i -g typescript-language-server
-
 fi
 
 # git
@@ -151,3 +149,6 @@ for plugin in $(asdf plugin list); do
         asdf plugin add "$plugin"
     fi
 done
+
+log 'Need Install typescript-language-server'
+log 'npm i -g typescript-language-server'
