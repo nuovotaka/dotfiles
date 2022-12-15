@@ -22,3 +22,7 @@ Start Yabai and skhd
 brew services start yabai
 brew services start skhd
 ```
+
+```
+npm i -g typescript-language-server
+```
