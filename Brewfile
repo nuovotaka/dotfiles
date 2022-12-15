@@ -53,7 +53,6 @@ mas "Autodesk Pixlr", id: 880663569
 mas "CalcMadeEasy", id: 417404127
 mas "Color Picker", id: 641027709
 mas "ColorSnapper", id: 418176775
-mas "com.adriangranados.wifiexplorerlite", id: 1408727408
 mas "Composure", id: 656377653
 mas "Craft", id: 1487937127
 mas "exifpurge", id: 784466108
@@ -73,8 +72,6 @@ mas "Pocket", id: 568494494
 mas "PopClip", id: 445189367
 mas "QaLL", id: 480452005
 mas "QREncoder", id: 452695239
-mas "Skala Preview", id: 498875079
-mas "Skitch", id: 425955336
 mas "StuffIt Expander", id: 405580712
 mas "The Unarchiver", id: 425424353
 mas "ToyViewer", id: 414298354
