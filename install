@@ -146,7 +146,7 @@ for plugin in $(asdf plugin list); do
         fi
 
         log "Install runtime: $plugin"
-        asdf plugin add "$plugin"
+        asdf install "$plugin"
     fi
 done
 
