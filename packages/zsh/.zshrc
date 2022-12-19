@@ -30,8 +30,8 @@ export LANG=ja_JP.UTF-8
 
 . /usr/local/opt/asdf/libexec/asdf.sh
 
-alias ll='ls -l'
-alias la='ls -la'
+alias ll='exa -l --icons --git'
+alias la='exa -la --icons --git'
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
