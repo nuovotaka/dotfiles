@@ -9,6 +9,7 @@ cask_args appdir: "/Applications"
 
 brew "arp-scan"
 brew "asdf"
+brew "bat"
 brew "exa"
 brew "gawk"
 brew "git"

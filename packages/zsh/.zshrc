@@ -32,6 +32,7 @@ export LANG=ja_JP.UTF-8
 
 alias ll='exa -l --icons --git'
 alias la='exa -la --icons --git'
+alias cat='bat'
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
