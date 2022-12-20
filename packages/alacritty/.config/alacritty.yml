@@ -59,7 +59,7 @@ colors:
 font:
   normal:
     family: Hack Nerd Font
-    style: Book
+    style: Regular
   bold:
     family: Hack Nerd Font
     style: Bold
