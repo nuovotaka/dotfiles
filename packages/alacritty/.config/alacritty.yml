@@ -65,10 +65,8 @@ font:
     style: Bold
   size: 14
 
----
 key_bindings:
----
-- { key: T, mods: Command, chars: "\x11\x63" } # Cmd+t 新規ウィンドう
-- { key: D, mods: Command, chars: "\x11\x25" } # Cmd+d 左右に分割
-- { key: D, mods: Command|Shift, chars: "\x11\x22" } # Cmd+shift+d 縦分割
-- { key: W, mods: Command, chars: "\x11\x78" } # Cmd+wでペインを削除する
+  - { key: T, mods: Command, chars: "\x11\x63" } # Cmd+t 新規ウィンドう
+  - { key: D, mods: Command, chars: "\x11\x25" } # Cmd+d 左右に分割
+  - { key: D, mods: Command|Shift, chars: "\x11\x22" } # Cmd+shift+d 縦分割
+  - { key: W, mods: Command, chars: "\x11\x78" } # Cmd+wでペインを削除する
