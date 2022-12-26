@@ -26,3 +26,13 @@ brew services start skhd
 ```
 npm i -g typescript-language-server
 ```
+
+## Web Browser Extensions
+
+[1Password](https://1password.com/jp/)
+[Custom Cursor for Chrome]
+[Google Analytics]
+[JSONView]
+[Keepa - Amazon Price Tracker]
+[Live Color Picker]
+[Mouse Dictionary]
