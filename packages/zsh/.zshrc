@@ -1,4 +1,7 @@
-source <(curl -sL git.io/zi-loader); zzinit
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+mkdir -p "$(dirname $ZINIT_HOME)"
+git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "${ZINIT_HOME}/zinit.zsh"
 
 # Load a few important annexes, without Turbo
 # (this is currently required for annexes)
