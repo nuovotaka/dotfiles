@@ -6,7 +6,6 @@ MacOS only
 
 - GNU stow
 - Homebrew bundle
-- VSCode Setting Sync
 
 # Installation
 

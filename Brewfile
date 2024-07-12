@@ -30,7 +30,6 @@ brew "fsouza/prettierd/prettierd"
 brew "koekeishiya/formulae/skhd"
 brew "koekeishiya/formulae/yabai"
 
-cask "alacritty"
 cask "appcleaner"
 cask "binance"
 cask "brave-browser"
@@ -51,7 +50,6 @@ cask "sourcetree"
 cask "spotify"
 cask "tableplus"
 cask "telegram"
-cask "visual-studio-code"
 cask "whalebird"
 
 mas "1Password for Safari", id: 1569813296
