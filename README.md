@@ -25,7 +25,8 @@ brew services start skhd
 ```
 npm i -g typescript-language-server
 ```
-
+## Editor
+- [zed](https://zed.dev)
 ## Web Browser Extensions
 
 - [1Password](https://1password.com/jp/)
