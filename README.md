@@ -15,18 +15,16 @@ Run install
 curl -o - https://raw.githubusercontent.com/nuovotaka/dotfiles/main/install | sh
 ```
 
-Start Yabai and skhd
+Install kitty
 
 ```
-brew services start yabai
-brew services start skhd
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 ```
 
-```
-npm i -g typescript-language-server
-```
 ## Editor
+
 - [zed](https://zed.dev)
+
 ## Web Browser Extensions
 
 - [1Password](https://1password.com/jp/)
