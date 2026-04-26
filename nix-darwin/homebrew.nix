@@ -127,10 +127,6 @@
       "yusukehirao.vscode-markuplint"
     ];
 
-    cargo = [
-      "dip"
-    ];
-
     taps = [
       # brew tap petere/postgresql
       # "petere/postgresql"

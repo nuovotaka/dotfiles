@@ -99,17 +99,3 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
-
-
-  programs.git = {
-    enable = true;
-    ignores = let
-      direnv = [".envrc" ".direnv" "devenv.local.nix" ".pre-commit-config.yaml"];
-      emacs = ["*~"];
-      mac = [".DS_Store"];
-    in
-      direnv ++ emacs ++ mac;
-    extraConfig = {
-      init.defaultBranch = "main";
-    };
-  };

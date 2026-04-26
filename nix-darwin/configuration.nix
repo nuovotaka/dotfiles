@@ -1,10 +1,12 @@
 {
   self,
+  pkgs,
   ...
 }:
 {
   nixpkgs.config.allowUnfree = true;
 
+  system.primaryUser = "taka_mbp";
   users.users."taka_mbp".home = "/Users/taka_mbp";
 
   imports = [
@@ -28,7 +30,6 @@
   system.defaults = {
     NSGlobalDomain = {
       "com.apple.mouse.tapBehavior" = 1;  # tap to click
-      AppleInterfaceStyle = "light";
     };
 
     trackpad = {
@@ -36,7 +37,7 @@
     };
 
     dock = {
-      tilesize = 20;
+      tilesize = 26;
       orientation = "left";
       show-recents = false;
       launchanim = false;
@@ -63,15 +64,6 @@
     # 例: catppuccin, Gruvbox など。pkgs.base16-schemes から選べます
     base16Scheme = "${pkgs.base16-schemes}/share/themes/github-dark.yaml";
 
-    # ライトモードを強制
-    polarity = "light";
-    targets = {
-      vscode.enable = false;    # VS Code は自分で設定したい場合
-      terminal.enable = false;  # Apple純正ターミナル
-      neovim.enable = false;
-      kitty.enable = false;
-      starship.enable = false;
-    };
     # 壁紙を引き延ばして全体に指定
     imageScalingMode = "fill"; # "fill", "fit", "stretch", "center"
   };
