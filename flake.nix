@@ -13,6 +13,7 @@
        inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
+    stylix.url = "github:danth/stylix";       # Add Stylix
   };
 
   outputs =
@@ -22,6 +23,7 @@
        home-manager,
        nix-darwin,
        nix-homebrew,
+       stylix,
      }:
     {
       darwinConfigurations."MBP16" = nix-darwin.lib.darwinSystem {
@@ -33,6 +35,7 @@
           ./nix-darwin/configuration.nix
           home-manager.darwinModules.home-manager
           nix-homebrew.darwinModules.nix-homebrew
+          stylix.darwinModules.stylix  # Add module Stylix
         ];
       };
     };

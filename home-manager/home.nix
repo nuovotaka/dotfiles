@@ -15,7 +15,6 @@
     eza
     gawk
     gnupg
-    mkalias
     neovim
     nodejs-slim
     xz
@@ -24,9 +23,10 @@
     tree
     prettierd
 
-    # application
+    # # application
     appcleaner
     bruno
+    google-chrome
     insomnia
     karabiner-elements
     obsidian
@@ -40,7 +40,7 @@
     antigravity
     # kiro
 
-    # fonts
+    # # fonts
     nerd-fonts.code-new-roman
     nerd-fonts.hack
 
@@ -53,22 +53,27 @@
     # '')
   ];
 
-  # Home Manager is pretty good at managing dotfiles. The primary way to manage
-  # plain files is through 'home.file'.
   home.file = {
     ".gitconfig".source = ./git/.gitconfig;
     ".zshrc".source = ./zsh/.zshrc;
 
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
+    ".config/starship.toml".source = ./config/starship;
+    ".config/kitty".source = ./config/kitty;
+    ".config/nix".source = ./config/nix;
+    ".config/nvim".source = ./config/nvim;
 
-    # # You can also set the file content immediately.
-    # ".gradle/gradle.properties".text = ''
-    #   org.gradle.console=verbose
-    #   org.gradle.daemon.idletimeout=3600000
-    # '';
+  };
+
+  programs.git = {
+    enable = true;
+    ignores = let
+      emacs = ["*~"];
+      mac = [".DS_Store"];
+    in
+      emacs ++ mac;
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
   };
 
   # Home Manager can also manage your environment variables through
@@ -88,9 +93,23 @@
   #  /etc/profiles/per-user/taka_mbp/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "vim";
+    EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
+
+
+  programs.git = {
+    enable = true;
+    ignores = let
+      direnv = [".envrc" ".direnv" "devenv.local.nix" ".pre-commit-config.yaml"];
+      emacs = ["*~"];
+      mac = [".DS_Store"];
+    in
+      direnv ++ emacs ++ mac;
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
+  };
