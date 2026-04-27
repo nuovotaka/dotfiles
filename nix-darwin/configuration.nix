@@ -42,6 +42,51 @@
       show-recents = false;
       launchanim = false;
       wvous-tl-corner = 13;
+
+      persistent-apps = [
+        { app = "/System/Applications/Apps.app"; }
+        { app = "/Applications/Dropbox.app"; }
+        { app = "/Applications/Brave Browser.app"; }
+        { app = "/Applications/Dia.app"; }
+        { app = "/Applications/Safari.app"; }
+        { app = "/Applications/Google Chrome.app"; }
+        { app = "/System/Applications/Messages.app"; }
+        { app = "/System/Applications/FaceTime.app"; }
+        { app = "/System/Applications/Mail.app"; }
+        { app = "/System/Applications/Maps.app"; }
+        { app = "/System/Applications/Photos.app"; }
+        { app = "/System/Applications/Calendar.app"; }
+        { app = "/System/Applications/Contacts.app"; }
+        { app = "/System/Applications/Notes.app"; }
+        { app = "/Applications/Raindrop.io.app"; }
+        { app = "/Applications/DeepL.app"; }
+        { app = "/Applications/LeathercraftCAD.app"; }
+        { app = "/Applications/KiCad/KiCad.app"; }
+        { app = "/Applications/Blender Launcher.app"; }
+        { app = "/Applications/Orcaslicer.app"; }
+        { app = "/Applications/BambuStudio.app"; }
+        { app = "/Applications/Ledger Wallet.app"; }
+        { app = "/Applications/Binance.app"; }
+        { app = "/Applications/TradingView.app"; }
+        { app = "/Applications/Obsidian.app"; }
+        { app = "/Applications/Podman Desktop.app"; }
+        { app = "/Applications/Bruno.app"; }
+        { app = "/Applications/Github Desktop.app"; }
+        { app = "/Applications/kitty.app"; }
+        { app = "/Applications/Visual Studio Code.app"; }
+        { app = "/Applications/Antigravity.app"; }
+        # { app = "/Applications/Claude.app"; }
+        { app = "/Applications/Kiro.app"; }
+        # nRF connect for desktop
+        { app = "/Applications/iMovie.app"; }
+        { app = "/Applications/Canva.app"; }
+        { app = "/Applications/Figma.app"; }
+        { app = "/System/Applications/iPhone Mirroring.app"; }
+        { app = "/System/Applications/App Store.app"; }
+        { app = "/Applications/AppCleaner.app"; }
+        { app = "/Applications/QaLL.app"; }
+        { app = "/System/Applications/System Settings.app"; }
+      ];
     };
   };
 
