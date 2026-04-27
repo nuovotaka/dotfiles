@@ -1,5 +1,5 @@
 {
-  description = "Home Manager configuration of taka_mbp";
+  description = "My macOS configuration";
 
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
