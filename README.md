@@ -1,6 +1,6 @@
 # dotfiles-nix
 
-MacOS(M シリーズ)のみに対応しています。
+MacOS(Apple Silicon)のみに対応しています。
 
 パッケージ管理: [Nix](https://nixos.org/)
 
