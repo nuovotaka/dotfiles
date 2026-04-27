@@ -30,11 +30,13 @@
       # brew install --cask binance
       "binance"
       "brave-browser"
+      "google-chrome"
       "deepl"
       "dropbox"
       "figma"
       "ledger-wallet"
       "popclip"
+      "raindropio"
       "visual-studio-code"
       "whalebird"
     ];
