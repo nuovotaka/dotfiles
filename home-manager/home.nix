@@ -26,19 +26,13 @@
     # # application
     appcleaner
     bruno
-    google-chrome
     insomnia
     karabiner-elements
     obsidian
     podman-desktop
-    # github-desktop
     tableplus
-    # kicad
-    # blender
-    # tradingview
     kitty
     antigravity
-    # kiro
 
     # # fonts
     nerd-fonts.code-new-roman
@@ -54,27 +48,26 @@
   ];
 
   home.file = {
-    ".gitconfig".source = ./git/.gitconfig;
+    ".gitconfig".source = ./git/gitconfig;
     ".zshrc".source = ./zsh/.zshrc;
 
     ".config/starship.toml".source = ./config/starship;
     ".config/kitty".source = ./config/kitty;
     ".config/nix".source = ./config/nix;
     ".config/nvim".source = ./config/nvim;
+  }
 
-  };
-
-  programs.git = {
-    enable = true;
-    ignores = let
-      emacs = ["*~"];
-      mac = [".DS_Store"];
-    in
-      emacs ++ mac;
-    extraConfig = {
-      init.defaultBranch = "main";
-    };
-  };
+  # programs.git = {
+  #   enable = true;
+  #   ignores = let
+  #     emacs = ["*~"];
+  #     mac = [".DS_Store"];
+  #   in
+  #     emacs ++ mac;
+  #   extraConfig = {
+  #     init.defaultBranch = "main";
+  #   };
+  # };
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
