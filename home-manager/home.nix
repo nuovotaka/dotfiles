@@ -48,14 +48,15 @@
   ];
 
   home.file = {
-    ".gitconfig".source = ./git/gitconfig;
+    ".gitconfig".source = ./git/.gitconfig;
+    ".gitignore_global".source = ./git/.gitignore_global;
     ".zshrc".source = ./zsh/.zshrc;
 
     ".config/starship.toml".source = ./config/starship;
     ".config/kitty".source = ./config/kitty;
     ".config/nix".source = ./config/nix;
     ".config/nvim".source = ./config/nvim;
-  }
+  };
 
   # programs.git = {
   #   enable = true;
@@ -86,7 +87,7 @@
   #  /etc/profiles/per-user/taka_mbp/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "nvim";
+  #  EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
