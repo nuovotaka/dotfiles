@@ -75,7 +75,6 @@
         { app = "/Applications/kitty.app"; }
         { app = "/Applications/Visual Studio Code.app"; }
         { app = "/Applications/Antigravity.app"; }
-        # { app = "/Applications/Claude.app"; }
         { app = "/Applications/Kiro.app"; }
         # nRF connect for desktop
         { app = "/Applications/iMovie.app"; }
