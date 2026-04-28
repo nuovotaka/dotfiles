@@ -104,6 +104,11 @@
     # 必須: テーマ（Base16形式）を指定
     # 例: catppuccin, Gruvbox など。pkgs.base16-schemes から選べます
     base16Scheme = "${pkgs.base16-schemes}/share/themes/github-dark.yaml";
-
   };
+  
+  # OS全体へのフォントの追加
+  fonts.packages = with pkgs; [
+    nerd-fonts.code-new-roman
+    nerd-fonts.hack
+  ];
 }

@@ -38,7 +38,6 @@
     nerd-fonts.code-new-roman
     nerd-fonts.hack
 
-
     # # You can also create simple shell scripts directly inside your
     # # configuration. For example, this adds a command 'my-hello' to your
     # # environment:
@@ -46,7 +45,8 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
-
+  fonts.fontconfig.enable = true;
+  
   home.file = {
     ".gitconfig".source = ./git/.gitconfig;
     ".gitignore_global".source = ./git/.gitignore_global;
