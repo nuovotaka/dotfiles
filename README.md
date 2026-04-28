@@ -8,7 +8,8 @@ MacOS(Apple Silicon)のみに対応しています。
 2. [nix-installer](https://github.com/DeterminateSystems/nix-installer) を使って Nix をインストール
 3. [Homebrew](https://brew.sh/) をインストール
 4. このリポジトリをクローン
-5. クローンしたディレクトリで `nix run` を実行
+5. アプリのマニュアルインストール（dock にアプリを nix を使用して配置しているので先にインストールが必要）
+6. クローンしたディレクトリで `nix run` を実行
 
 ---
 
