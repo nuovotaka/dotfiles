@@ -100,15 +100,10 @@
   
   stylix = {
     enable = true;
-    
-    # 必須: 壁紙となる画像ファイルのパス
-    image = ../images/wall-paper/Circles-me.jpg;
-    
+
     # 必須: テーマ（Base16形式）を指定
     # 例: catppuccin, Gruvbox など。pkgs.base16-schemes から選べます
     base16Scheme = "${pkgs.base16-schemes}/share/themes/github-dark.yaml";
 
-    # 壁紙を引き延ばして全体に指定
-    imageScalingMode = "fill"; # "fill", "fit", "stretch", "center"
   };
 }
