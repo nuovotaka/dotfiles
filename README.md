@@ -1,4 +1,4 @@
-# dotfiles-nix
+# dotfiles
 
 MacOS(Apple Silicon)のみに対応しています。
 
