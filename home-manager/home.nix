@@ -52,7 +52,7 @@
     ".gitignore_global".source = ./git/.gitignore_global;
     ".zshrc".source = ./zsh/.zshrc;
 
-    ".config/starship.toml".source = ./config/starship;
+    ".config/starship.toml".source = ./config/starship/starship.toml;
     ".config/kitty".source = ./config/kitty;
     ".config/nix".source = ./config/nix;
     ".config/nvim".source = ./config/nvim;
