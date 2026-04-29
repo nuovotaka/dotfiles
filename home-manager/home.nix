@@ -47,23 +47,15 @@
   ];
   fonts.fontconfig.enable = true;
   
-  # Neovimの設定ディレクトリをまるごとsymlink (~/.config/nvim/)
-  xdg.configFile."nvim" = {
-    source = ./config/nvim;  # home-configuration.nixからの相対パス
-    recursive = true;
-  };
-
-  # 個別のファイルを配置
-  xdg.configFile = {
-    "starship.toml".source = ./config/starship/starship.toml;
-    "kitty".source = ./config/kitty;
-    "nix".source = ./config/nix;
-  }
-
   home.file = {
     ".gitconfig".source = ./git/.gitconfig;
     ".gitignore_global".source = ./git/.gitignore_global;
     ".zshrc".source = ./zsh/.zshrc;
+
+    ".config/starship.toml".source = ./config/starship;
+    ".config/kitty".source = ./config/kitty;
+    ".config/nix".source = ./config/nix;
+    ".config/nvim".source = ./config/nvim;
   };
 
   # programs.git = {
