@@ -33,6 +33,8 @@ if [[ $(command -v eza) ]]; then
      alias eta='eza -T -L 3 -a -I "node_modules|.git|.cache" --color=always --icons | less -r'
  fi
 export LANG=ja_JP.UTF-8
+PATH="$PATH:/Applications/WezTerm.app/Contents/MacOS"
+export PATH
 
 alias ll='eza -l --icons --git'
 alias la='eza -la --icons --git'
