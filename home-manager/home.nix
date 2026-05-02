@@ -14,11 +14,10 @@
     go-task
     bat
     eza
-    gawk
+    fzf
     gnupg
     neovim
     nodejs-slim
-    xz
     wget
     starship
     tree
@@ -57,6 +56,11 @@
   xdg.configFile = {
     "kitty".source = ./config/kitty;
     "nix".source = ./config/nix;
+  };
+
+  xdg.configFile = {
+    "wezterm".source = ./config/wezterm;
+    recursive = true;
   };
 
   xdg.configFile."starship.toml".source = ./config/starship/starship.toml;
