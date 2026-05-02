@@ -38,7 +38,6 @@
       "popclip"
       "raindropio"
       "visual-studio-code"
-      "whalebird"
     ];
 
     masApps = {
