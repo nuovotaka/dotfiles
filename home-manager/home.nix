@@ -17,6 +17,7 @@
     fzf
     fd
     ripgrep
+    lazygit
     gnupg
     neovim
     nodejs-slim
