@@ -15,6 +15,8 @@
     bat
     eza
     fzf
+    fd
+    ripgrep
     gnupg
     neovim
     nodejs-slim
