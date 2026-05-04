@@ -19,7 +19,7 @@
     ripgrep
     lazygit
     gnupg
-    neovim
+    # neovim
     nodejs-slim
     wget
     starship
@@ -51,10 +51,10 @@
   fonts.fontconfig.enable = true;
   
   # Neovimの設定ディレクトリをまるごとsymlink (~/.config/nvim/)
-  xdg.configFile."nvim" = {
-    source = ./config/nvim;  # home-configuration.nixからの相対パス
-    recursive = true;
-  };
+  # xdg.configFile."nvim" = {
+  #   source = ./config/nvim;  # home-configuration.nixからの相対パス
+  #   recursive = true;
+  # };
 
   xdg.configFile = {
     "kitty".source = ./config/kitty;

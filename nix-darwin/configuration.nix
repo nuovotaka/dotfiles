@@ -12,6 +12,7 @@
   imports = [
     ./home_manager.nix
     ./homebrew.nix
+    ../config
   ];
 
   nixpkgs.hostPlatform = "aarch64-darwin";
@@ -117,11 +118,22 @@
     imports = [ ../config/default.nix ];
     enable = true;
     vimAlias = true;
-    globals = {
-      mapleader = " ";
-    };
-    opts = {
-      number = true;
-    };
+    globals.mapleader = " ";
+    
+    # 基本的なキーマップ
+    keymaps = [
+      {
+        mode = "n";
+        key = "<C-s>";
+        action = "<cmd>w<cr>";
+        options.desc = "Save File";
+      }
+      {
+        mode = "n";
+        key = "<leader>qq";
+        action = "<cmd>qa<cr>";
+        options.desc = "Quit All";
+      }
+    ];
   };
 }

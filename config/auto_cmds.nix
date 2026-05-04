@@ -6,7 +6,7 @@
     restore_cursor = { };
   };
 
-  autoCmd = [
+  autoCommands = [
     {
       group = "highlight_yank";
       event = [ "TextYankPost" ];
