@@ -13,6 +13,9 @@
        inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
+    nixvim = {
+      url = "github:nix-community/nixvim";
+    };
     stylix.url = "github:danth/stylix";       # Add Stylix
   };
 
@@ -23,18 +26,20 @@
        home-manager,
        nix-darwin,
        nix-homebrew,
+       nixvim,
        stylix,
      }:
     {
       darwinConfigurations."MBP16" = nix-darwin.lib.darwinSystem {
         specialArgs = {
-          inherit self nix-homebrew;
+          inherit self nix-homebrew nixvim;
         };
 
         modules = [
           ./nix-darwin/configuration.nix
           home-manager.darwinModules.home-manager
           nix-homebrew.darwinModules.nix-homebrew
+          nixvim.nixDarwinModules.nixvim
           stylix.darwinModules.stylix  # Add module Stylix
         ];
       };

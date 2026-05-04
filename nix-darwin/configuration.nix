@@ -111,4 +111,17 @@
     nerd-fonts.code-new-roman
     nerd-fonts.hack
   ];
+
+  # Editor
+  programs.nixvim = {
+    imports = [ ../config/default.nix ];
+    enable = true;
+    vimAlias = true;
+    globals = {
+      mapleader = " ";
+    };
+    opts = {
+      number = true;
+    };
+  };
 }
