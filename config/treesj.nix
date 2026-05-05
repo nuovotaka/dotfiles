@@ -1,0 +1,6 @@
+{ ... }:
+{
+  plugins.treesj = {
+    enable = true;
+  };
+}

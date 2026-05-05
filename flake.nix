@@ -29,18 +29,47 @@
        nix-homebrew,
        nixvim,
        stylix,
-     }:
+    }@inputs:
+    let
+      system = "aarch64-darwin";
+      pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfree = true;
+      };
+
+      nvim = nixvim.legacyPackages.${system}.makeNixvimWithModule {
+        inherit pkgs;
+        module = ./config; 
+      };
+    in
     {
+      packages.${system}.default = nvim;
+
+      checks.${system}.default = nixvim.lib.${system}.check.mkTestDerivationFromNvim {
+        inherit nvim;
+        name = "A nixvim configuration";
+      };
+
+      devShells.${system}.default = pkgs.mkShellNoCC {
+        shellHook = ''
+          echo Welcome to a Neovim dev environment powered by Nixvim
+          PS1="Nixvim: \\w \$ "
+          alias vim='nvim'
+        '';
+        packages = [
+          nvim
+        ];
+      };
+
       darwinConfigurations."MBP16" = nix-darwin.lib.darwinSystem {
         specialArgs = {
-          inherit self nix-homebrew nixvim;
+          inherit self nix-homebrew nvim;
         };
 
         modules = [
           ./nix-darwin/configuration.nix
           home-manager.darwinModules.home-manager
           nix-homebrew.darwinModules.nix-homebrew
-          nixvim.nixDarwinModules.nixvim
           stylix.darwinModules.stylix  # Add module Stylix
         ];
       };

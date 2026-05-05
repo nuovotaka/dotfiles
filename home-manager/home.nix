@@ -26,6 +26,30 @@
     tree
     prettierd
 
+    # base
+    nerd-fonts.jetbrains-mono # Font
+    # Formatters
+    stylua # Lua formatter
+    csharpier # C# formatter
+    nixfmt-rfc-style # Nix formatter
+    # Linters
+    golangci-lint # Go linter
+    shellcheck # Shell script linter
+    eslint_d # JavaScript/TypeScript linter
+    # Debuggers
+    netcoredbg # C# debugger
+    asm-lsp # Assembly LSP
+    delve # Go debugger
+    gcc
+
+    # ✅ Roslyn開発に必要なパッケージを追加
+    roslyn-ls
+    dotnet-sdk_8
+
+    # ✅ 他のエラー防止用
+    yaml-language-server
+    ansible-lint # ansible-vim用
+
     # # GUI application
     appcleaner
     bruno
@@ -49,12 +73,6 @@
     # '')
   ];
   fonts.fontconfig.enable = true;
-  
-  # Neovimの設定ディレクトリをまるごとsymlink (~/.config/nvim/)
-  # xdg.configFile."nvim" = {
-  #   source = ./config/nvim;  # home-configuration.nixからの相対パス
-  #   recursive = true;
-  # };
 
   xdg.configFile = {
     "kitty".source = ./config/kitty;
@@ -72,18 +90,6 @@
     ".gitignore_global".source = ./git/.gitignore_global;
     ".zshrc".source = ./zsh/.zshrc;
   };
-
-  # programs.git = {
-  #   enable = true;
-  #   ignores = let
-  #     emacs = ["*~"];
-  #     mac = [".DS_Store"];
-  #   in
-  #     emacs ++ mac;
-  #   extraConfig = {
-  #     init.defaultBranch = "main";
-  #   };
-  # };
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a

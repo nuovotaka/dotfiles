@@ -1,493 +1,360 @@
+{ pkgs, ... }:
 {
-  globals.mapleader = " ";
-
   keymaps = [
+    # default keymaps
     {
-      mode = [
-        "n"
-        "x"
-      ];
-      key = "j";
-      action = "v:count == 0 ? 'gj' : 'j'";
-      options = {
-        expr = true;
-        silent = true;
-      };
+      key = "<leader>p";
+      mode = [ "n" ];
+      action = "<cmd>YankyRingHistory<CR>";
     }
     {
-      mode = [
-        "n"
-        "x"
-      ];
-      key = "<Down>";
-      action = "v:count == 0 ? 'gj' : 'j'";
-      options = {
-        expr = true;
-        silent = true;
-      };
-    }
-    {
-      mode = [
-        "n"
-        "x"
-      ];
-      key = "k";
-      action = "v:count == 0 ? 'gk' : 'k'";
-      options = {
-        expr = true;
-        silent = true;
-      };
-    }
-    {
-      mode = [
-        "n"
-        "x"
-      ];
-      key = "<Up>";
-      action = "v:count == 0 ? 'gk' : 'k'";
-      options = {
-        expr = true;
-        silent = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-h>";
-      action = "<C-w>h";
-      options = {
-        desc = "Go to Left Window";
-        remap = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-j>";
-      action = "<C-w>j";
-      options = {
-        desc = "Go to Lower Window";
-        remap = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-k>";
-      action = "<C-w>k";
-      options = {
-        desc = "Go to Upper Window";
-        remap = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-l>";
-      action = "<C-w>l";
-      options = {
-        desc = "Go to Right Window";
-        remap = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-Up>";
-      action = "<cmd>resize +2<cr>";
-      options = {
-        desc = "Increase Window Height";
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-Down>";
-      action = "<cmd>resize -2<cr>";
-      options = {
-        desc = "Decrease Window Height";
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-Left>";
-      action = "<cmd>vertical resize -2<cr>";
-      options = {
-        desc = "Decrease Window Width";
-      };
-    }
-    {
-      mode = "n";
-      key = "<C-Right>";
-      action = "<cmd>vertical resize +2<cr>";
-      options = {
-        desc = "Increase Window Width";
-      };
-    }
-    {
-      mode = "n";
-      key = "<A-j>";
-      action = "<cmd>m .+1<cr>==";
-      options = {
-        desc = "Move Down";
-      };
-    }
-    {
-      mode = "n";
-      key = "<A-k>";
-      action = "<cmd>m .-2<cr>==";
-      options = {
-        desc = "Move Up";
-      };
-    }
-    {
-      mode = "i";
-      key = "<A-j>";
-      action = "<esc><cmd>m .+1<cr>==gi";
-      options = {
-        desc = "Move Down";
-      };
-    }
-    {
-      mode = "i";
-      key = "<A-k>";
-      action = "<esc><cmd>m .-2<cr>==gi";
-      options = {
-        desc = "Move Up";
-      };
-    }
-    {
-      mode = "v";
-      key = "<A-j>";
-      action = ":m '>+1<cr>gv=gv";
-      options = {
-        desc = "Move Down";
-      };
-    }
-    {
-      mode = "v";
-      key = "<A-k>";
-      action = ":m '<-2<cr>gv=gv";
-      options = {
-        desc = "Move Up";
-      };
-    }
-    {
-      mode = "i";
-      key = ";";
-      action = ";<c-g>u";
-    }
-    {
-      mode = "i";
-      key = ".";
-      action = ".<c-g>u";
-    }
-    {
-      mode = "i";
-      key = ";";
-      action = ";<c-g>u";
-    }
-    {
-      mode = [
-        "i"
-        "x"
-        "n"
-        "s"
-      ];
-      key = "<C-s>";
-      action = "<cmd>w<cr><esc>";
-      options = {
-        desc = "Save File";
-      };
-    }
-    {
-      mode = [
-        "i"
-        "n"
-      ];
-      key = "<esc>";
-      action = "<cmd>noh<cr><esc>";
-      options = {
-        desc = "Escape and Clear hlsearch";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>ur";
-      action = "<Cmd>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>";
-      options = {
-        desc = "Redraw / Clear hlsearch / Diff Update";
-      };
-    }
-    {
-      mode = "n";
-      key = "n";
-      action = "'Nn'[v:searchforward].'zv'";
-      options = {
-        expr = true;
-        desc = "Next Search Result";
-      };
-    }
-    {
-      mode = "x";
-      key = "n";
-      action = "'Nn'[v:searchforward]";
-      options = {
-        expr = true;
-        desc = "Next Search Result";
-      };
-    }
-    {
-      mode = "o";
-      key = "n";
-      action = "'Nn'[v:searchforward]";
-      options = {
-        expr = true;
-        desc = "Next Search Result";
-      };
-    }
-    {
-      mode = "n";
-      key = "N";
-      action = "'nN'[v:searchforward].'zv'";
-      options = {
-        expr = true;
-        desc = "Prev Search Result";
-      };
-    }
-    {
-      mode = "x";
-      key = "N";
-      action = "'nN'[v:searchforward]";
-      options = {
-        expr = true;
-        desc = "Prev Search Result";
-      };
-    }
-    {
-      mode = "o";
-      key = "N";
-      action = "'nN'[v:searchforward]";
-      options = {
-        expr = true;
-        desc = "Prev Search Result";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>cd";
-      action = "vim.diagnostic.open_float";
-      options = {
-        desc = "Line Diagnostics";
-      };
-    }
-    {
-      mode = "n";
-      key = "]d";
-      action = "diagnostic_goto(true)";
-      options = {
-        desc = "Next Diagnostic";
-      };
-    }
-    {
-      mode = "n";
-      key = "[d";
-      action = "diagnostic_goto(false)";
-      options = {
-        desc = "Prev Diagnostic";
-      };
-    }
-    {
-      mode = "n";
-      key = "]e";
-      action = "diagnostic_goto(true 'ERROR')";
-      options = {
-        desc = "Next Error";
-      };
-    }
-    {
-      mode = "n";
-      key = "[e";
-      action = "diagnostic_goto(false 'ERROR')";
-      options = {
-        desc = "Prev Error";
-      };
-    }
-    {
-      mode = "n";
-      key = "]w";
-      action = "diagnostic_goto(true 'WARN')";
-      options = {
-        desc = "Next Warning";
-      };
-    }
-    {
-      mode = "n";
-      key = "[w";
-      action = "diagnostic_goto(false 'WARN')";
-      options = {
-        desc = "Prev Warning";
-      };
-    }
-    {
-      mode = "n";
       key = "<leader>qq";
-      action = "<cmd>qa<cr>";
+      mode = [ "n" ];
+      action = "<cmd>qa<CR>";
+    }
+
+    # aerial.nix keymaps
+    {
+      key = "<leader>o";
+      mode = [ "n" ];
+      action = "<cmd>AerialToggle<CR>";
+    }
+
+    # autosave.nix keymaps
+    {
+      key = "<C-s>";
+      mode = [ "n" ];
+      action = "<cmd>ASToggle<CR>";
+    }
+
+    # bufferline.nix keymaps
+    {
+      mode = [ "n" ];
+      key = "]b";
+      action = "<cmd>BufferLineCycleNext<cr>";
       options = {
-        desc = "Quit All";
+        desc = "Cycle to next buffer";
       };
     }
     {
-      mode = "n";
-      key = "<leader>ui";
-      action = "vim.show_pos";
+      mode = [ "n" ];
+      key = "[b";
+      action = "<cmd>BufferLineCyclePrev<cr>";
       options = {
-        desc = "Inspect Pos";
+        desc = "Cycle to previous buffer";
       };
     }
     {
-      mode = "t";
-      key = "<esc><esc>";
-      action = "<c-\\><c-n>";
+      mode = ["n"];
+      key = "<S-l>";
+      action = "<cmd>BufferLineCycleNext<cr>";
       options = {
-        desc = "Enter Normal Mode";
+        desc = "Cycle to next buffer";
       };
     }
     {
-      mode = "t";
-      key = "<C-h>";
-      action = "<cmd>wincmd h<cr>";
+      mode = ["n"];
+      key = "<S-h>";
+      action = "<cmd>BufferLineCyclePrev<cr>";
       options = {
-        desc = "Go to Left Window";
+        desc = "Cycle to previous buffer";
       };
     }
     {
-      mode = "t";
-      key = "<C-j>";
-      action = "<cmd>wincmd j<cr>";
+      mode = ["n"];
+      key = "<leader>bd";
+      action = "<cmd>bdelete<cr>";
       options = {
-        desc = "Go to Lower Window";
+        desc = "Delete buffer";
       };
     }
     {
-      mode = "t";
-      key = "<C-k>";
-      action = "<cmd>wincmd k<cr>";
+      mode = ["n"];
+      key = "<leader>bl";
+      action = "<cmd>BufferLineCloseLeft<cr>";
       options = {
-        desc = "Go to Upper Window";
+        desc = "Delete buffers to the left";
       };
     }
     {
-      mode = "t";
-      key = "<C-l>";
-      action = "<cmd>wincmd l<cr>";
+      mode = ["n"];
+      key = "<leader>bo";
+      action = "<cmd>BufferLineCloseOthers<cr>";
       options = {
-        desc = "Go to Right Window";
+        desc = "Delete other buffers";
       };
     }
     {
-      mode = "t";
-      key = "<C-/>";
-      action = "<cmd>close<cr>";
+      mode = ["n"];
+      key = "<leader>bp";
+      action = "<cmd>BufferLineTogglePin<cr>";
       options = {
-        desc = "Hide Terminal";
+        desc = "Toggle pin";
       };
     }
     {
-      mode = "n";
-      key = "<leader>ww";
-      action = "<C-W>p";
+      mode = ["n"];
+      key = "<leader>bP";
+      action = "<Cmd>BufferLineGroupClose ungrouped<CR>";
       options = {
-        desc = "Other Window";
-        remap = true;
+        desc = "Delete non-pinned buffers";
+      };
+    }
+
+    # kulala.nix keymaps
+    {
+      key = "<leader>Rs";
+      mode = [
+        "n"
+        "v"
+      ];
+      action = "<cmd>SendRequest<CR>";
+    }
+    {
+      key = "<leader>Ra";
+      mode = [
+        "n"
+        "v"
+      ];
+      action = "<cmd>SendAllRequests<CR>";
+    }
+    {
+      key = "<leader>Rb";
+      mode = [
+        "n"
+        "v"
+      ];
+      action = "<cmd>OpenScratchpad<CR>";
+    }
+
+    # lazygit.nix keymaps
+    {
+      key = "<leader>gg";
+      mode = [ "n" ];
+      action = "<cmd>LazyGit<CR>";
+      options = {
+        silent = true;
+        noremap = true;
+      };
+    }
+
+    # nix-develop.nix keymaps
+    {
+      key = "<leader>nd";
+      mode = [ "n" ];
+      action = "<cmd>NixDevelop<CR>";
+    }
+
+    # snacks.nix keymaps
+    {
+      key = "<leader>e";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.explorer()<CR>";
+      options = {
+        silent = true;
+        noremap = true;
       };
     }
     {
-      mode = "n";
-      key = "<leader>wd";
-      action = "<C-W>c";
+      key = "<leader>?";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.grep()<CR>";
       options = {
-        desc = "Delete Window";
-        remap = true;
+        silent = true;
+        noremap = true;
       };
     }
     {
-      mode = "n";
-      key = "<leader>w-";
-      action = "<C-W>s";
+      key = "<leader>n";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.notifications()<CR>";
       options = {
-        desc = "Split Window Below";
-        remap = true;
+        silent = true;
+        noremap = true;
       };
     }
     {
-      mode = "n";
-      key = "<leader>w|";
-      action = "<C-W>v";
+      key = "<leader>fb";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.buffers()<CR>";
       options = {
-        desc = "Split Window Right";
-        remap = true;
+        silent = true;
+        noremap = true;
       };
     }
     {
-      mode = "n";
-      key = "<leader>-";
-      action = "<C-W>s";
+      key = "<leader>ff";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.files()<CR>";
       options = {
-        desc = "Split Window Below";
-        remap = true;
+        silent = true;
+        noremap = true;
       };
     }
     {
-      mode = "n";
-      key = "<leader>|";
-      action = "<C-W>v";
+      key = "<leader>gl";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.git_log()<CR>";
       options = {
-        desc = "Split Window Right";
-        remap = true;
+        silent = true;
+        noremap = true;
       };
     }
     {
-      mode = "n";
-      key = "<leader><tab>l";
-      action = "<cmd>tablast<cr>";
+      key = "<leader>gb";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.git_branches()<CR>";
       options = {
-        desc = "Last Tab";
+        silent = true;
+        noremap = true;
       };
     }
     {
-      mode = "n";
-      key = "<leader><tab>f";
-      action = "<cmd>tabfirst<cr>";
+      key = "<leader>gB";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.gitbrowse()<CR>";
       options = {
-        desc = "First Tab";
+        silent = true;
+        noremap = true;
       };
     }
     {
-      mode = "n";
-      key = "<leader><tab><tab>";
-      action = "<cmd>tabnew<cr>";
+      key = "<leader>gs";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.git_status()<CR>";
       options = {
-        desc = "New Tab";
+        silent = true;
+        noremap = true;
       };
     }
     {
-      mode = "n";
-      key = "<leader><tab>]";
-      action = "<cmd>tabnext<cr>";
-      options = {
-        desc = "Next Tab";
-      };
+      key = "<leader>uC";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.colorschemes()<CR>";
     }
     {
-      mode = "n";
-      key = "<leader><tab>d";
-      action = "<cmd>tabclose<cr>";
-      options = {
-        desc = "Close Tab";
-      };
+      key = "<leader>:";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.command_history()<CR>";
     }
     {
-      mode = "n";
-      key = "<leader><tab>[";
-      action = "<cmd>tabprevious<cr>";
+      # Goto Definition
+      key = "gd";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.lsp_definitions()<CR>";
+    }
+    {
+      # Goto Declaration
+      key = "gD";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.lsp_declarations()<CR>";
+    }
+    {
+      # References
+      key = "gr";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.lsp_references()<CR>";
+    }
+    {
+      # Goto Implementation
+      key = "gI";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.lsp_implementations()<CR>";
+    }
+    {
+      # Goto Type Definition (gy)
+      key = "gy";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.lsp_type_definitions()<CR>";
+    }
+
+    # LSP Symbols
+    {
+      key = "<leader>ss";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.lsp_symbols()<CR>";
+    }
+
+    # LSP Workspace Symbols
+    {
+      key = "<leader>sS";
+      mode = [ "n" ];
+      action = "<cmd>lua Snacks.picker.lsp_workspace_symbols()<CR>";
+    }
+
+    # toggleterm.nix keymaps
+    {
+      key = "<C-t>";
+      mode = [
+        "n"
+        "t"
+      ];
+      action = "<cmd>ToggleTerm<CR>";
       options = {
-        desc = "Previous Tab";
+        silent = true;
+        noremap = true;
       };
+    }
+
+    # treesj.nix keymaps
+    {
+      mode = ["n"];
+      key = "<leader>m";
+      action = "<cmd>TSJToggle<CR>";
+    }
+    {
+      mode = ["n"];
+      key = "<leader>s";
+      action = "<cmd>TSJSplit<CR>";
+    }
+    {
+      mode = ["n"];
+      key = "<leader>j";
+      action = "<cmd>TSJJoin<CR>";
+    }
+
+    # wtf.nix keymaps
+    {
+      key = "<leader>wa";
+      mode = [
+        "n"
+      ];
+      action = "<cmd>Wtf<CR>";
+    }
+    {
+      key = "<leader>ws";
+      mode = [
+        "n"
+      ];
+      action = "<cmd>WtfSearch google<CR>";
+    }
+    {
+      key = "<leader>wh";
+      mode = [
+        "n"
+      ];
+      action = "<cmd>WtfHistory<CR>";
+    }
+    {
+      key = "<leader>wg";
+      mode = [
+        "n"
+      ];
+      action = "<cmd>WtfGrepHistory<CR>";
+    }
+
+    # yazi.nix keymaps
+    {
+      key = "<leader>fm";
+      mode = [ "n" ];
+      action = "<cmd>Yazi<CR>";
+    }
+
+    # zen-mode.nix keymaps
+    {
+      key = "<leader>zm";
+      mode = [ "n" ];
+      action = "<cmd>ZenMode<CR>";
     }
   ];
 }
