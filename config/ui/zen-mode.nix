@@ -22,4 +22,11 @@
       };
     };
   };
+  keymaps = [
+    {
+      key = "<leader>zm";
+      mode = [ "n" ];
+      action = "<cmd>ZenMode<CR>"; # 執筆/コーディング集中モードの切り替え
+    }
+  ];
 }

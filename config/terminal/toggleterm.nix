@@ -17,4 +17,12 @@
       shell = "${pkgs.zsh}/bin/zsh";
     };
   };
+  keymaps = [
+    {
+      key = "<C-t>";
+      mode = [ "n" "t" ];
+      action = "<cmd>ToggleTerm<CR>"; # ターミナルの表示/非表示を切り替え
+      options = { silent = true; noremap = true; };
+    }
+  ];
 }

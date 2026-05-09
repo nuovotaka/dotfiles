@@ -78,4 +78,21 @@
       };
     };
   };
+  keymaps = [
+    {
+      key = "<leader>Rs";
+      mode = [ "n" "v" ];
+      action = "<cmd>SendRequest<CR>"; # 現在のHTTPリクエストを送信
+    }
+    {
+      key = "<leader>Ra";
+      mode = [ "n" "v" ];
+      action = "<cmd>SendAllRequests<CR>"; # ファイル内の全リクエストを送信
+    }
+    {
+      key = "<leader>Rb";
+      mode = [ "n" "v" ];
+      action = "<cmd>OpenScratchpad<CR>"; # クラスパット（下書き）を開く
+    }
+  ];
 }

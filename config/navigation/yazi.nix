@@ -12,4 +12,11 @@
       yazi_floating_window_winblend = 20;
     };
   };
+  keymaps = [
+    {
+      key = "<leader>fm";
+      mode = [ "n" ];
+      action = "<cmd>Yazi<CR>"; # Yaziファイラを起動
+    }
+  ];
 }

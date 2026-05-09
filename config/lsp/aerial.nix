@@ -53,4 +53,11 @@
       };
     };
   };
+  keymaps = [
+    {
+      key = "<leader>o";
+      mode = [ "n" ];
+      action = "<cmd>AerialToggle<CR>"; # クラスや関数のシンボル一覧（アウトライン）をトグル
+    }
+  ];
 }

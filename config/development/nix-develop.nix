@@ -26,4 +26,11 @@
       XDG_DATA_DIRS = ":";
     };
   };
+  keymaps = [
+    {
+      key = "<leader>nd";
+      mode = [ "n" ];
+      action = "<cmd>NixDevelop<CR>"; # nix develop シェル環境を起動
+    }
+  ];
 }
