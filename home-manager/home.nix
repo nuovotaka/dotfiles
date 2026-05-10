@@ -89,6 +89,7 @@
     ".gitconfig".source = ./git/.gitconfig;
     ".gitignore_global".source = ./git/.gitignore_global;
     ".zshrc".source = ./zsh/.zshrc;
+    ".gemini/GEMINI.md".source = ./gemini/GEMINI.md;
   };
 
   # Home Manager can also manage your environment variables through

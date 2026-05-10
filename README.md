@@ -36,6 +36,14 @@ task switch
 - [leathercraftCAD](https://coffee-craft.net/leathercraft_cad)
 - [orcaslicer](https://www.orcaslicer.com/)
 
+### その他
+
+- [kitty icon](https://github.com/DinkDonk/kitty-icon)
+
+### MCP
+
+- https://mcp.deepwiki.com/mcp
+
 ---
 
 # Neovim キーマップ一覧 (nixvim)
@@ -194,21 +202,21 @@ task switch
 
 ## 🤖 AI 支援 (Codeium)
 
-| キー         | モード | アクション           | 内容                               |
-| :----------- | :----: | :------------------- | :--------------------------------- |
-| `<Tab>`      |   i    | `Codeium Accept`     | 提案されたコードを確定             |
-| `<C-]>`      |   i    | `Codeium Next`       | 次の提案へ                         |
-| `<C-[>`      |   i    | `Codeium Prev`       | 前の提案へ                         |
-| `<C-x>`      |   i    | `Codeium Clear`      | 提案を消去                         |
+| キー    | モード | アクション       | 内容                   |
+| :------ | :----: | :--------------- | :--------------------- |
+| `<Tab>` |   i    | `Codeium Accept` | 提案されたコードを確定 |
+| `<C-]>` |   i    | `Codeium Next`   | 次の提案へ             |
+| `<C-[>` |   i    | `Codeium Prev`   | 前の提案へ             |
+| `<C-x>` |   i    | `Codeium Clear`  | 提案を消去             |
 
 ## 📂 セッション・プロジェクト管理 (Persistence, Project.nvim)
 
-| キー         | モード | アクション                        | 内容                                   |
-| :----------- | :----: | :-------------------------------- | :------------------------------------- |
-| `<leader>qs` |   n    | `persistence load`                | 現在のディレクトリのセッションを復元   |
-| `<leader>ql` |   n    | `persistence load { last = true }`| 最後のセッションを復元                 |
-| `<leader>qd` |   n    | `persistence stop`                | 現在のセッションを保存しない           |
-| `<leader>fp` |   n    | `Telescope projects`              | プロジェクト検索                       |
+| キー         | モード | アクション                         | 内容                                 |
+| :----------- | :----: | :--------------------------------- | :----------------------------------- |
+| `<leader>qs` |   n    | `persistence load`                 | 現在のディレクトリのセッションを復元 |
+| `<leader>ql` |   n    | `persistence load { last = true }` | 最後のセッションを復元               |
+| `<leader>qd` |   n    | `persistence stop`                 | 現在のセッションを保存しない         |
+| `<leader>fp` |   n    | `Telescope projects`               | プロジェクト検索                     |
 
 ## 🏗 編集補助・その他
 
@@ -254,7 +262,7 @@ task switch
 - **Spectre** - プロジェクト全体の検索・置換
 - **Grug-far** - 高速なプロジェクト全体検索・置換
 - **Trouble** - 診断・参照の統合表示
-- **Todo-comments** - TODOコメントのハイライトと検索
+- **Todo-comments** - TODO コメントのハイライトと検索
 - **Yanky** - ヤンク履歴管理
 
 ### Git 統合
