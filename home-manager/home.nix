@@ -90,6 +90,8 @@
     ".gitignore_global".source = ./git/.gitignore_global;
     ".zshrc".source = ./zsh/.zshrc;
     ".gemini/GEMINI.md".source = ./gemini/GEMINI.md;
+    ".env.example".source = ../env/.env.example;
+    ".kiro/settings/mcp.json".source = ./kiro/settings/mcp.json;
   };
 
   # Home Manager can also manage your environment variables through

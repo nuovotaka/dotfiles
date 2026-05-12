@@ -1,5 +1,5 @@
 {
-  plugins.codeium-vim = {
+  plugins.windsurf-vim = {
     enable = true;
   };
 

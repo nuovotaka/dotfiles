@@ -40,10 +40,6 @@ task switch
 
 - [kitty icon](https://github.com/DinkDonk/kitty-icon)
 
-### MCP
-
-- https://mcp.deepwiki.com/mcp
-
 ---
 
 # Neovim キーマップ一覧 (nixvim)

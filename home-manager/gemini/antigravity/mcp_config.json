@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "obsidian": {
+      "command": "nix",
+      "args": [
+        "run",
+        "/Users/taka_mbp/github/dotfiles#obsidian-mcp"
+      ],
+      "disabled": true
+    }
+  }
+}
