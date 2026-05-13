@@ -108,7 +108,7 @@
         ];
 
         # ここでテンプレ config コピーも一緒にやる
-        templateConfig = "/Users/taka_mbp/github/dotfiles/home-manager/gemini/antigravity/mcp_config.json";
+        templateConfig = "/Users/taka_mbp/dotfiles/home-manager/gemini/antigravity/mcp_config.json";
         targetConfig   = "/Users/taka_mbp/.gemini/antigravity/mcp_config.json";
       };
 
