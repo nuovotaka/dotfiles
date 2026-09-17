@@ -76,7 +76,7 @@
         { app = "/Applications/Github Desktop.app"; }
         { app = "/Applications/kitty.app"; }
         { app = "/Applications/Visual Studio Code.app"; }
-        { app = "/Applications/Home Manager Apps/Antigravity IDE.app"; }
+        { app = "/Users/taka_mbp/Applications/Home Manager Apps/Antigravity IDE.app"; }
         { app = "/Applications/Kiro.app"; }
         # nRF connect for desktop
         { app = "/Applications/iMovie.app"; }
