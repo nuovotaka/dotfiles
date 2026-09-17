@@ -85,7 +85,6 @@
         { app = "/System/Applications/iPhone Mirroring.app"; }
         { app = "/System/Applications/App Store.app"; }
         { app = "/Applications/AppCleaner.app"; }
-        { app = "/Applications/QaLL.app"; }
         { app = "/System/Applications/System Settings.app"; }
       ];
     };
