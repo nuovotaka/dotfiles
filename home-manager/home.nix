@@ -6,6 +6,8 @@
 
   home.stateVersion = "25.11"; # Please read the comment before changing.
 
+  home.enableNixpkgsReleaseCheck = false;
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
@@ -60,7 +62,7 @@
     podman-desktop
     tableplus
     kitty
-    antigravity
+    antigravity-ide
 
     # # fonts
     nerd-fonts.code-new-roman
