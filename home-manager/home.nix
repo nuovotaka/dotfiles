@@ -57,7 +57,6 @@
     appcleaner
     bruno
     insomnia
-    karabiner-elements
     obsidian
     podman-desktop
     tableplus

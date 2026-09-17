@@ -22,6 +22,7 @@ task switch
 
 ## マニュアルインストール
 
+- [Karabiner Elements](https://karabiner-elements.pqrs.org/)
 - [wezterm](https://wezterm.org/index.html)
 - [1password](https://1password.com/jp)
 - [github-desktop](https://github.com/apps/desktop)
