@@ -47,7 +47,6 @@
       "Craft" = 1487937127;
       "LINE" = 539883307;
       "NFT Creator" = 1602374609;
-      "QaLL" = 480452005;
       "QREncoder" = 452695239;
       "The Unarchiver" = 425424353;
       # "Xcode" = 497799835;
