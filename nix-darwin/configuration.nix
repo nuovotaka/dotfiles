@@ -70,13 +70,13 @@
         { app = "/Applications/Ledger Wallet.app"; }
         { app = "/Applications/Binance.app"; }
         { app = "/Applications/TradingView.app"; }
-        { app = "/Applications/Obsidian.app"; }
-        { app = "/Applications/Podman Desktop.app"; }
-        { app = "/Applications/Bruno.app"; }
+        { app = "~/Applications/Home Manager Apps/Obsidian.app"; }
+        { app = "~/Applications/Home Manager Apps/Podman Desktop.app"; }
+        { app = "~/Applications/Home Manager Apps/Bruno.app"; }
         { app = "/Applications/Github Desktop.app"; }
         { app = "/Applications/kitty.app"; }
         { app = "/Applications/Visual Studio Code.app"; }
-        { app = "/Applications/Antigravity.app"; }
+        { app = "/Applications/Home Manager Apps/Antigravity IDE.app"; }
         { app = "/Applications/Kiro.app"; }
         # nRF connect for desktop
         { app = "/Applications/iMovie.app"; }
@@ -84,7 +84,7 @@
         { app = "/Applications/Figma.app"; }
         { app = "/System/Applications/iPhone Mirroring.app"; }
         { app = "/System/Applications/App Store.app"; }
-        { app = "/Applications/AppCleaner.app"; }
+        { app = "~/Applications/Home Manager Apps/AppCleaner.app"; }
         { app = "/System/Applications/System Settings.app"; }
       ];
     };
