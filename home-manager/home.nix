@@ -4,9 +4,8 @@
   home.username = "taka_mbp";
   home.homeDirectory = "/Users/taka_mbp";
 
-  home.stateVersion = "25.11"; # Please read the comment before changing.
-
   home.enableNixpkgsReleaseCheck = false;
+  home.stateVersion = "25.11"; # Please read the comment before changing.
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
