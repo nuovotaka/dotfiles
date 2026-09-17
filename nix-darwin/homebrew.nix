@@ -18,7 +18,7 @@
     onActivation = {
       upgrade = true;  # デフォルト false
       autoUpdate = false;  # デフォルト false
-      cleanup = uninstall;
+      cleanup = "uninstall";
       # cleanup = "zap";  # Homebrew からの移行完了後に設定
     };
 
