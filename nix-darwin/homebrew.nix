@@ -28,9 +28,7 @@
     ];
 
     casks = [
-      # brew install --cask binance
       "1password-cli"
-      "binance"
       "brave-browser"
       "google-chrome"
       "deepl"

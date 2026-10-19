@@ -68,7 +68,6 @@
         { app = "/Applications/Orcaslicer.app"; }
         { app = "/Applications/BambuStudio.app"; }
         { app = "/Applications/Ledger Wallet.app"; }
-        { app = "/Applications/Binance.app"; }
         { app = "/Applications/TradingView.app"; }
         { app = "/Users/taka_mbp/Applications/Home Manager Apps/Obsidian.app"; }
         { app = "/Users/taka_mbp/Applications/Home Manager Apps/Podman Desktop.app"; }
