@@ -42,11 +42,10 @@ alias cat='bat'
 alias clr='clear'
 
 eval "$(starship init zsh)"
+eval "$(mise activate zsh)"
 
 . "/etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh"
 
 # Added by Antigravity
 export PATH="/Users/taka_mbp/.antigravity/antigravity/bin:$PATH"
 
-# Added by Antigravity
-export PATH="/Users/taka_mbp/.antigravity/antigravity/bin:$PATH"
