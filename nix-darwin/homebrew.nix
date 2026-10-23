@@ -24,7 +24,7 @@
 
     brews = [
      # brew install west
-      "volta"
+      "mise"
       "west"
     ];
 
