@@ -36,7 +36,7 @@
       "dropbox"
       "figma"
       "ledger-wallet"
-      "popclip"
+      # "popclip"
       "raindropio"
       "visual-studio-code"
     ];
@@ -45,8 +45,8 @@
       "1Password for Safari" = 1569813296;
       "Color Picker" = 641027709;
       "Craft" = 1487937127;
-      "LINE" = 539883307;
-      "NFT Creator" = 1602374609;
+      # "LINE" = 539883307;
+      # "NFT Creator" = 1602374609;
       "QREncoder" = 452695239;
       "The Unarchiver" = 425424353;
       # "Xcode" = 497799835;
